@@ -1,0 +1,198 @@
+{
+  "results": {
+    "wav2vec2": {
+      "correct": 8,
+      "total": 30,
+      "accuracy": 0.26666666666666666,
+      "macro_f1_six_reference_classes": 0.27651515151515155,
+      "predictions_outside_reference_classes": 9,
+      "classification_report": {
+        "angry": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 5.0
+        },
+        "disgust": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 5.0
+        },
+        "fearful": {
+          "precision": 0.3333333333333333,
+          "recall": 0.4,
+          "f1-score": 0.36363636363636365,
+          "support": 5.0
+        },
+        "happy": {
+          "precision": 0.5,
+          "recall": 0.6,
+          "f1-score": 0.5454545454545454,
+          "support": 5.0
+        },
+        "neutral": {
+          "precision": 0.6666666666666666,
+          "recall": 0.4,
+          "f1-score": 0.5,
+          "support": 5.0
+        },
+        "sad": {
+          "precision": 0.3333333333333333,
+          "recall": 0.2,
+          "f1-score": 0.25,
+          "support": 5.0
+        },
+        "micro avg": {
+          "precision": 0.38095238095238093,
+          "recall": 0.26666666666666666,
+          "f1-score": 0.3137254901960784,
+          "support": 30.0
+        },
+        "macro avg": {
+          "precision": 0.3055555555555555,
+          "recall": 0.26666666666666666,
+          "f1-score": 0.27651515151515155,
+          "support": 30.0
+        },
+        "weighted avg": {
+          "precision": 0.3055555555555555,
+          "recall": 0.26666666666666666,
+          "f1-score": 0.2765151515151515,
+          "support": 30.0
+        }
+      }
+    },
+    "wavlm": {
+      "correct": 6,
+      "total": 30,
+      "accuracy": 0.2,
+      "macro_f1_six_reference_classes": 0.20965608465608465,
+      "predictions_outside_reference_classes": 14,
+      "classification_report": {
+        "angry": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 5.0
+        },
+        "disgust": {
+          "precision": 0.3333333333333333,
+          "recall": 0.2,
+          "f1-score": 0.25,
+          "support": 5.0
+        },
+        "fearful": {
+          "precision": 0.42857142857142855,
+          "recall": 0.6,
+          "f1-score": 0.5,
+          "support": 5.0
+        },
+        "happy": {
+          "precision": 0.5,
+          "recall": 0.2,
+          "f1-score": 0.2857142857142857,
+          "support": 5.0
+        },
+        "neutral": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 5.0
+        },
+        "sad": {
+          "precision": 0.25,
+          "recall": 0.2,
+          "f1-score": 0.2222222222222222,
+          "support": 5.0
+        },
+        "micro avg": {
+          "precision": 0.375,
+          "recall": 0.2,
+          "f1-score": 0.2608695652173913,
+          "support": 30.0
+        },
+        "macro avg": {
+          "precision": 0.251984126984127,
+          "recall": 0.19999999999999998,
+          "f1-score": 0.20965608465608465,
+          "support": 30.0
+        },
+        "weighted avg": {
+          "precision": 0.251984126984127,
+          "recall": 0.2,
+          "f1-score": 0.20965608465608465,
+          "support": 30.0
+        }
+      }
+    },
+    "ensemble": {
+      "correct": 7,
+      "total": 30,
+      "accuracy": 0.23333333333333334,
+      "macro_f1_six_reference_classes": 0.23525641025641028,
+      "predictions_outside_reference_classes": 10,
+      "classification_report": {
+        "angry": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 5.0
+        },
+        "disgust": {
+          "precision": 0.3333333333333333,
+          "recall": 0.2,
+          "f1-score": 0.25,
+          "support": 5.0
+        },
+        "fearful": {
+          "precision": 0.375,
+          "recall": 0.6,
+          "f1-score": 0.46153846153846156,
+          "support": 5.0
+        },
+        "happy": {
+          "precision": 0.6666666666666666,
+          "recall": 0.4,
+          "f1-score": 0.5,
+          "support": 5.0
+        },
+        "neutral": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 5.0
+        },
+        "sad": {
+          "precision": 0.2,
+          "recall": 0.2,
+          "f1-score": 0.2,
+          "support": 5.0
+        },
+        "micro avg": {
+          "precision": 0.35,
+          "recall": 0.23333333333333334,
+          "f1-score": 0.28,
+          "support": 30.0
+        },
+        "macro avg": {
+          "precision": 0.2625,
+          "recall": 0.23333333333333336,
+          "f1-score": 0.23525641025641028,
+          "support": 30.0
+        },
+        "weighted avg": {
+          "precision": 0.2625,
+          "recall": 0.23333333333333334,
+          "f1-score": 0.23525641025641028,
+          "support": 30.0
+        }
+      }
+    }
+  },
+  "model_bundle_sha256": "748a6d4dd4adb1c51c7d3c46ec650ea6a35117ad5f0b489b3c888e2db0e9b5db",
+  "selection_sha256": "266a3d0a012fc76a3d099eaa64dbafe2bccb6d0e55f2f8319a43516e358fb04c",
+  "manifest_sha256": "7ad0988729c73a3784cd222862192520730f10976480007a99b871e180a04902",
+  "elapsed_seconds": 15.220612399993115,
+  "note": "Small external sample with thirty distinct speakers. Reference labels are intended performed emotions. Eight-way predictions retained; Macro F1 averaged over the six reference classes. Not directly comparable with the eight-class RAVDESS development Macro F1."
+}

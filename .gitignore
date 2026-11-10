@@ -1,0 +1,73 @@
+# Python environments
+.venv/
+venv/
+env/
+
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Local datasets and extracted features
+/data/
+
+# Personal recordings and other audio
+*.wav
+*.mp3
+*.flac
+*.ogg
+*.m4a
+*.aac
+*.wma
+*.aiff
+
+# Model weights and serialized objects
+*.joblib
+*.pkl
+*.pickle
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+pytorch_model*.bin
+
+# Binary feature arrays
+*.npz
+*.npy
+*.f32
+
+# Downloaded archives
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+/hf_token*
+/token.txt
+/secrets/
+/credentials/
+
+# Tool caches
+.cache/
+.huggingface/
+wandb/
+runs/
+
+# Local editor and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Temporary files
+*.tmp
+*.log

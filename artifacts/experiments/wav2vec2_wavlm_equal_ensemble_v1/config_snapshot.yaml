@@ -1,0 +1,31 @@
+experiment: wavlm_base_plus_mean_logistic_v1
+data:
+  manifest: data/manifest.csv
+  folds: speaker_folds.json
+  expected_recordings: 1200
+  expected_speakers: 20
+encoder:
+  model_id: microsoft/wavlm-base-plus
+  revision: main
+  sample_rate: 16000
+  expected_layers: 12
+  expected_width: 768
+  expected_do_normalize: false
+  pooling: all_transformer_mean
+  device: cpu
+classifier:
+  name: logistic
+  C: 1.0
+  max_iter: 2000
+runtime:
+  seed: 42
+  cpu_threads: 4
+  smoke_recordings: 5
+output:
+  directory: artifacts/experiments/wavlm_base_plus_mean_logistic_v1
+ensemble:
+  reference_features: data/wav2vec2_all_layers_dev.npz
+  candidate_directory: artifacts/experiments/wavlm_base_plus_mean_logistic_v1
+  reference_weight: 0.5
+  candidate_weight: 0.5
+  output_directory: artifacts/experiments/wav2vec2_wavlm_equal_ensemble_v1

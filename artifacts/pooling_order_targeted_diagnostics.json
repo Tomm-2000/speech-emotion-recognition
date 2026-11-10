@@ -1,0 +1,906 @@
+{
+  "seeds": [
+    42,
+    7,
+    123
+  ],
+  "speakers": {
+    "09": {
+      "mean_then_head": {
+        "mean_prediction_counts": {
+          "01": 0.0,
+          "02": 6.666666666666667,
+          "03": 1.6666666666666667,
+          "04": 34.666666666666664,
+          "05": 3.3333333333333335,
+          "06": 8.666666666666666,
+          "07": 2.3333333333333335,
+          "08": 2.6666666666666665
+        },
+        "recall": {
+          "01": {
+            "recordings": 4,
+            "recall_per_seed": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "mean_recall": 0.0
+          },
+          "02": {
+            "recordings": 8,
+            "recall_per_seed": [
+              0.875,
+              0.875,
+              0.75
+            ],
+            "mean_recall": 0.8333333333333334
+          },
+          "03": {
+            "recordings": 8,
+            "recall_per_seed": [
+              0.25,
+              0.125,
+              0.25
+            ],
+            "mean_recall": 0.20833333333333334
+          },
+          "04": {
+            "recordings": 8,
+            "recall_per_seed": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "mean_recall": 1.0
+          },
+          "05": {
+            "recordings": 8,
+            "recall_per_seed": [
+              0.375,
+              0.375,
+              0.375
+            ],
+            "mean_recall": 0.375
+          },
+          "06": {
+            "recordings": 8,
+            "recall_per_seed": [
+              0.5,
+              0.5,
+              0.5
+            ],
+            "mean_recall": 0.5
+          },
+          "07": {
+            "recordings": 8,
+            "recall_per_seed": [
+              0.125,
+              0.125,
+              0.125
+            ],
+            "mean_recall": 0.125
+          },
+          "08": {
+            "recordings": 8,
+            "recall_per_seed": [
+              0.375,
+              0.25,
+              0.375
+            ],
+            "mean_recall": 0.3333333333333333
+          }
+        },
+        "largest_confusions": [
+          {
+            "actual": "07",
+            "predicted": "04",
+            "mean_count": 7.0
+          },
+          {
+            "actual": "08",
+            "predicted": "04",
+            "mean_count": 5.333333333333333
+          },
+          {
+            "actual": "01",
+            "predicted": "04",
+            "mean_count": 4.0
+          },
+          {
+            "actual": "06",
+            "predicted": "04",
+            "mean_count": 4.0
+          },
+          {
+            "actual": "03",
+            "predicted": "04",
+            "mean_count": 3.3333333333333335
+          },
+          {
+            "actual": "03",
+            "predicted": "06",
+            "mean_count": 2.3333333333333335
+          }
+        ],
+        "wrong_all_seeds": [
+          "data/raw/Actor_09/03-01-01-01-01-01-09.wav",
+          "data/raw/Actor_09/03-01-01-01-01-02-09.wav",
+          "data/raw/Actor_09/03-01-01-01-02-01-09.wav",
+          "data/raw/Actor_09/03-01-01-01-02-02-09.wav",
+          "data/raw/Actor_09/03-01-02-02-02-02-09.wav",
+          "data/raw/Actor_09/03-01-03-01-01-01-09.wav",
+          "data/raw/Actor_09/03-01-03-01-01-02-09.wav",
+          "data/raw/Actor_09/03-01-03-01-02-01-09.wav",
+          "data/raw/Actor_09/03-01-03-02-01-02-09.wav",
+          "data/raw/Actor_09/03-01-03-02-02-01-09.wav",
+          "data/raw/Actor_09/03-01-03-02-02-02-09.wav",
+          "data/raw/Actor_09/03-01-05-01-01-01-09.wav",
+          "data/raw/Actor_09/03-01-05-01-01-02-09.wav",
+          "data/raw/Actor_09/03-01-05-01-02-01-09.wav",
+          "data/raw/Actor_09/03-01-05-01-02-02-09.wav",
+          "data/raw/Actor_09/03-01-05-02-02-02-09.wav",
+          "data/raw/Actor_09/03-01-06-01-01-01-09.wav",
+          "data/raw/Actor_09/03-01-06-01-01-02-09.wav",
+          "data/raw/Actor_09/03-01-06-01-02-01-09.wav",
+          "data/raw/Actor_09/03-01-06-01-02-02-09.wav",
+          "data/raw/Actor_09/03-01-07-01-01-01-09.wav",
+          "data/raw/Actor_09/03-01-07-01-01-02-09.wav",
+          "data/raw/Actor_09/03-01-07-01-02-01-09.wav",
+          "data/raw/Actor_09/03-01-07-01-02-02-09.wav",
+          "data/raw/Actor_09/03-01-07-02-01-01-09.wav",
+          "data/raw/Actor_09/03-01-07-02-01-02-09.wav",
+          "data/raw/Actor_09/03-01-07-02-02-02-09.wav",
+          "data/raw/Actor_09/03-01-08-01-01-01-09.wav",
+          "data/raw/Actor_09/03-01-08-01-01-02-09.wav",
+          "data/raw/Actor_09/03-01-08-01-02-01-09.wav",
+          "data/raw/Actor_09/03-01-08-01-02-02-09.wav",
+          "data/raw/Actor_09/03-01-08-02-01-02-09.wav"
+        ],
+        "same_wrong_all_seeds": [
+          "data/raw/Actor_09/03-01-01-01-01-01-09.wav",
+          "data/raw/Actor_09/03-01-01-01-01-02-09.wav",
+          "data/raw/Actor_09/03-01-01-01-02-01-09.wav",
+          "data/raw/Actor_09/03-01-01-01-02-02-09.wav",
+          "data/raw/Actor_09/03-01-02-02-02-02-09.wav",
+          "data/raw/Actor_09/03-01-03-01-01-01-09.wav",
+          "data/raw/Actor_09/03-01-03-01-01-02-09.wav",
+          "data/raw/Actor_09/03-01-03-01-02-01-09.wav",
+          "data/raw/Actor_09/03-01-03-02-02-01-09.wav",
+          "data/raw/Actor_09/03-01-03-02-02-02-09.wav",
+          "data/raw/Actor_09/03-01-05-01-01-01-09.wav",
+          "data/raw/Actor_09/03-01-05-01-02-01-09.wav",
+          "data/raw/Actor_09/03-01-05-02-02-02-09.wav",
+          "data/raw/Actor_09/03-01-06-01-01-01-09.wav",
+          "data/raw/Actor_09/03-01-06-01-01-02-09.wav",
+          "data/raw/Actor_09/03-01-06-01-02-01-09.wav",
+          "data/raw/Actor_09/03-01-06-01-02-02-09.wav",
+          "data/raw/Actor_09/03-01-07-01-01-01-09.wav",
+          "data/raw/Actor_09/03-01-07-01-01-02-09.wav",
+          "data/raw/Actor_09/03-01-07-01-02-01-09.wav",
+          "data/raw/Actor_09/03-01-07-01-02-02-09.wav",
+          "data/raw/Actor_09/03-01-07-02-01-01-09.wav",
+          "data/raw/Actor_09/03-01-07-02-01-02-09.wav",
+          "data/raw/Actor_09/03-01-07-02-02-02-09.wav",
+          "data/raw/Actor_09/03-01-08-01-01-01-09.wav",
+          "data/raw/Actor_09/03-01-08-01-01-02-09.wav",
+          "data/raw/Actor_09/03-01-08-01-02-01-09.wav",
+          "data/raw/Actor_09/03-01-08-01-02-02-09.wav",
+          "data/raw/Actor_09/03-01-08-02-01-02-09.wav"
+        ]
+      },
+      "head_then_mean": {
+        "mean_prediction_counts": {
+          "01": 0.0,
+          "02": 7.333333333333333,
+          "03": 0.0,
+          "04": 36.333333333333336,
+          "05": 2.3333333333333335,
+          "06": 9.0,
+          "07": 2.0,
+          "08": 3.0
+        },
+        "recall": {
+          "01": {
+            "recordings": 4,
+            "recall_per_seed": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "mean_recall": 0.0
+          },
+          "02": {
+            "recordings": 8,
+            "recall_per_seed": [
+              0.875,
+              0.875,
+              0.875
+            ],
+            "mean_recall": 0.875
+          },
+          "03": {
+            "recordings": 8,
+            "recall_per_seed": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "mean_recall": 0.0
+          },
+          "04": {
+            "recordings": 8,
+            "recall_per_seed": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "mean_recall": 1.0
+          },
+          "05": {
+            "recordings": 8,
+            "recall_per_seed": [
+              0.375,
+              0.25,
+              0.25
+            ],
+            "mean_recall": 0.2916666666666667
+          },
+          "06": {
+            "recordings": 8,
+            "recall_per_seed": [
+              0.5,
+              0.5,
+              0.5
+            ],
+            "mean_recall": 0.5
+          },
+          "07": {
+            "recordings": 8,
+            "recall_per_seed": [
+              0.125,
+              0.0,
+              0.0
+            ],
+            "mean_recall": 0.041666666666666664
+          },
+          "08": {
+            "recordings": 8,
+            "recall_per_seed": [
+              0.375,
+              0.375,
+              0.375
+            ],
+            "mean_recall": 0.375
+          }
+        },
+        "largest_confusions": [
+          {
+            "actual": "07",
+            "predicted": "04",
+            "mean_count": 7.666666666666667
+          },
+          {
+            "actual": "08",
+            "predicted": "04",
+            "mean_count": 5.0
+          },
+          {
+            "actual": "03",
+            "predicted": "04",
+            "mean_count": 4.0
+          },
+          {
+            "actual": "06",
+            "predicted": "04",
+            "mean_count": 4.0
+          },
+          {
+            "actual": "01",
+            "predicted": "04",
+            "mean_count": 3.6666666666666665
+          },
+          {
+            "actual": "03",
+            "predicted": "06",
+            "mean_count": 3.0
+          }
+        ],
+        "wrong_all_seeds": [
+          "data/raw/Actor_09/03-01-01-01-01-01-09.wav",
+          "data/raw/Actor_09/03-01-01-01-01-02-09.wav",
+          "data/raw/Actor_09/03-01-01-01-02-01-09.wav",
+          "data/raw/Actor_09/03-01-01-01-02-02-09.wav",
+          "data/raw/Actor_09/03-01-02-02-02-02-09.wav",
+          "data/raw/Actor_09/03-01-03-01-01-01-09.wav",
+          "data/raw/Actor_09/03-01-03-01-01-02-09.wav",
+          "data/raw/Actor_09/03-01-03-01-02-01-09.wav",
+          "data/raw/Actor_09/03-01-03-01-02-02-09.wav",
+          "data/raw/Actor_09/03-01-03-02-01-01-09.wav",
+          "data/raw/Actor_09/03-01-03-02-01-02-09.wav",
+          "data/raw/Actor_09/03-01-03-02-02-01-09.wav",
+          "data/raw/Actor_09/03-01-03-02-02-02-09.wav",
+          "data/raw/Actor_09/03-01-05-01-01-01-09.wav",
+          "data/raw/Actor_09/03-01-05-01-01-02-09.wav",
+          "data/raw/Actor_09/03-01-05-01-02-02-09.wav",
+          "data/raw/Actor_09/03-01-05-02-02-01-09.wav",
+          "data/raw/Actor_09/03-01-05-02-02-02-09.wav",
+          "data/raw/Actor_09/03-01-06-01-01-01-09.wav",
+          "data/raw/Actor_09/03-01-06-01-01-02-09.wav",
+          "data/raw/Actor_09/03-01-06-01-02-01-09.wav",
+          "data/raw/Actor_09/03-01-06-01-02-02-09.wav",
+          "data/raw/Actor_09/03-01-07-01-01-01-09.wav",
+          "data/raw/Actor_09/03-01-07-01-01-02-09.wav",
+          "data/raw/Actor_09/03-01-07-01-02-01-09.wav",
+          "data/raw/Actor_09/03-01-07-01-02-02-09.wav",
+          "data/raw/Actor_09/03-01-07-02-01-01-09.wav",
+          "data/raw/Actor_09/03-01-07-02-01-02-09.wav",
+          "data/raw/Actor_09/03-01-07-02-02-02-09.wav",
+          "data/raw/Actor_09/03-01-08-01-01-01-09.wav",
+          "data/raw/Actor_09/03-01-08-01-01-02-09.wav",
+          "data/raw/Actor_09/03-01-08-01-02-01-09.wav",
+          "data/raw/Actor_09/03-01-08-01-02-02-09.wav",
+          "data/raw/Actor_09/03-01-08-02-01-02-09.wav"
+        ],
+        "same_wrong_all_seeds": [
+          "data/raw/Actor_09/03-01-01-01-01-01-09.wav",
+          "data/raw/Actor_09/03-01-01-01-02-01-09.wav",
+          "data/raw/Actor_09/03-01-01-01-02-02-09.wav",
+          "data/raw/Actor_09/03-01-02-02-02-02-09.wav",
+          "data/raw/Actor_09/03-01-03-01-01-01-09.wav",
+          "data/raw/Actor_09/03-01-03-01-01-02-09.wav",
+          "data/raw/Actor_09/03-01-03-01-02-01-09.wav",
+          "data/raw/Actor_09/03-01-03-01-02-02-09.wav",
+          "data/raw/Actor_09/03-01-03-02-01-01-09.wav",
+          "data/raw/Actor_09/03-01-03-02-01-02-09.wav",
+          "data/raw/Actor_09/03-01-03-02-02-01-09.wav",
+          "data/raw/Actor_09/03-01-03-02-02-02-09.wav",
+          "data/raw/Actor_09/03-01-05-01-01-01-09.wav",
+          "data/raw/Actor_09/03-01-05-02-02-01-09.wav",
+          "data/raw/Actor_09/03-01-05-02-02-02-09.wav",
+          "data/raw/Actor_09/03-01-06-01-01-01-09.wav",
+          "data/raw/Actor_09/03-01-06-01-01-02-09.wav",
+          "data/raw/Actor_09/03-01-06-01-02-01-09.wav",
+          "data/raw/Actor_09/03-01-06-01-02-02-09.wav",
+          "data/raw/Actor_09/03-01-07-01-01-01-09.wav",
+          "data/raw/Actor_09/03-01-07-01-01-02-09.wav",
+          "data/raw/Actor_09/03-01-07-01-02-01-09.wav",
+          "data/raw/Actor_09/03-01-07-01-02-02-09.wav",
+          "data/raw/Actor_09/03-01-07-02-01-01-09.wav",
+          "data/raw/Actor_09/03-01-07-02-01-02-09.wav",
+          "data/raw/Actor_09/03-01-07-02-02-02-09.wav",
+          "data/raw/Actor_09/03-01-08-01-01-01-09.wav",
+          "data/raw/Actor_09/03-01-08-01-01-02-09.wav",
+          "data/raw/Actor_09/03-01-08-01-02-01-09.wav",
+          "data/raw/Actor_09/03-01-08-01-02-02-09.wav",
+          "data/raw/Actor_09/03-01-08-02-01-02-09.wav"
+        ]
+      }
+    },
+    "13": {
+      "mean_then_head": {
+        "mean_prediction_counts": {
+          "01": 18.0,
+          "02": 0.0,
+          "03": 16.666666666666668,
+          "04": 2.0,
+          "05": 5.0,
+          "06": 0.6666666666666666,
+          "07": 1.0,
+          "08": 16.666666666666668
+        },
+        "recall": {
+          "01": {
+            "recordings": 4,
+            "recall_per_seed": [
+              0.75,
+              0.75,
+              0.75
+            ],
+            "mean_recall": 0.75
+          },
+          "02": {
+            "recordings": 8,
+            "recall_per_seed": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "mean_recall": 0.0
+          },
+          "03": {
+            "recordings": 8,
+            "recall_per_seed": [
+              0.75,
+              0.75,
+              0.75
+            ],
+            "mean_recall": 0.75
+          },
+          "04": {
+            "recordings": 8,
+            "recall_per_seed": [
+              0.125,
+              0.125,
+              0.125
+            ],
+            "mean_recall": 0.125
+          },
+          "05": {
+            "recordings": 8,
+            "recall_per_seed": [
+              0.625,
+              0.75,
+              0.5
+            ],
+            "mean_recall": 0.625
+          },
+          "06": {
+            "recordings": 8,
+            "recall_per_seed": [
+              0.125,
+              0.0,
+              0.125
+            ],
+            "mean_recall": 0.08333333333333333
+          },
+          "07": {
+            "recordings": 8,
+            "recall_per_seed": [
+              0.25,
+              0.125,
+              0.0
+            ],
+            "mean_recall": 0.125
+          },
+          "08": {
+            "recordings": 8,
+            "recall_per_seed": [
+              0.625,
+              0.875,
+              0.75
+            ],
+            "mean_recall": 0.75
+          }
+        },
+        "largest_confusions": [
+          {
+            "actual": "02",
+            "predicted": "01",
+            "mean_count": 7.0
+          },
+          {
+            "actual": "04",
+            "predicted": "01",
+            "mean_count": 5.333333333333333
+          },
+          {
+            "actual": "06",
+            "predicted": "08",
+            "mean_count": 5.333333333333333
+          },
+          {
+            "actual": "07",
+            "predicted": "08",
+            "mean_count": 3.3333333333333335
+          },
+          {
+            "actual": "05",
+            "predicted": "03",
+            "mean_count": 3.0
+          },
+          {
+            "actual": "07",
+            "predicted": "01",
+            "mean_count": 2.6666666666666665
+          }
+        ],
+        "wrong_all_seeds": [
+          "data/raw/Actor_13/03-01-01-01-02-02-13.wav",
+          "data/raw/Actor_13/03-01-02-01-01-01-13.wav",
+          "data/raw/Actor_13/03-01-02-01-01-02-13.wav",
+          "data/raw/Actor_13/03-01-02-01-02-01-13.wav",
+          "data/raw/Actor_13/03-01-02-01-02-02-13.wav",
+          "data/raw/Actor_13/03-01-02-02-01-01-13.wav",
+          "data/raw/Actor_13/03-01-02-02-01-02-13.wav",
+          "data/raw/Actor_13/03-01-02-02-02-01-13.wav",
+          "data/raw/Actor_13/03-01-02-02-02-02-13.wav",
+          "data/raw/Actor_13/03-01-03-02-02-01-13.wav",
+          "data/raw/Actor_13/03-01-03-02-02-02-13.wav",
+          "data/raw/Actor_13/03-01-04-01-01-01-13.wav",
+          "data/raw/Actor_13/03-01-04-01-02-01-13.wav",
+          "data/raw/Actor_13/03-01-04-01-02-02-13.wav",
+          "data/raw/Actor_13/03-01-04-02-01-01-13.wav",
+          "data/raw/Actor_13/03-01-04-02-01-02-13.wav",
+          "data/raw/Actor_13/03-01-04-02-02-01-13.wav",
+          "data/raw/Actor_13/03-01-04-02-02-02-13.wav",
+          "data/raw/Actor_13/03-01-05-01-01-01-13.wav",
+          "data/raw/Actor_13/03-01-05-01-01-02-13.wav",
+          "data/raw/Actor_13/03-01-06-01-01-01-13.wav",
+          "data/raw/Actor_13/03-01-06-01-02-01-13.wav",
+          "data/raw/Actor_13/03-01-06-01-02-02-13.wav",
+          "data/raw/Actor_13/03-01-06-02-01-01-13.wav",
+          "data/raw/Actor_13/03-01-06-02-01-02-13.wav",
+          "data/raw/Actor_13/03-01-06-02-02-01-13.wav",
+          "data/raw/Actor_13/03-01-06-02-02-02-13.wav",
+          "data/raw/Actor_13/03-01-07-01-01-01-13.wav",
+          "data/raw/Actor_13/03-01-07-01-01-02-13.wav",
+          "data/raw/Actor_13/03-01-07-01-02-01-13.wav",
+          "data/raw/Actor_13/03-01-07-01-02-02-13.wav",
+          "data/raw/Actor_13/03-01-07-02-01-02-13.wav",
+          "data/raw/Actor_13/03-01-07-02-02-02-13.wav",
+          "data/raw/Actor_13/03-01-08-02-02-01-13.wav"
+        ],
+        "same_wrong_all_seeds": [
+          "data/raw/Actor_13/03-01-01-01-02-02-13.wav",
+          "data/raw/Actor_13/03-01-02-01-01-02-13.wav",
+          "data/raw/Actor_13/03-01-02-01-02-02-13.wav",
+          "data/raw/Actor_13/03-01-02-02-01-01-13.wav",
+          "data/raw/Actor_13/03-01-02-02-01-02-13.wav",
+          "data/raw/Actor_13/03-01-02-02-02-01-13.wav",
+          "data/raw/Actor_13/03-01-02-02-02-02-13.wav",
+          "data/raw/Actor_13/03-01-03-02-02-01-13.wav",
+          "data/raw/Actor_13/03-01-03-02-02-02-13.wav",
+          "data/raw/Actor_13/03-01-04-01-01-01-13.wav",
+          "data/raw/Actor_13/03-01-04-01-02-01-13.wav",
+          "data/raw/Actor_13/03-01-04-01-02-02-13.wav",
+          "data/raw/Actor_13/03-01-04-02-01-01-13.wav",
+          "data/raw/Actor_13/03-01-04-02-02-01-13.wav",
+          "data/raw/Actor_13/03-01-05-01-01-01-13.wav",
+          "data/raw/Actor_13/03-01-05-01-01-02-13.wav",
+          "data/raw/Actor_13/03-01-06-01-01-01-13.wav",
+          "data/raw/Actor_13/03-01-06-01-02-01-13.wav",
+          "data/raw/Actor_13/03-01-06-01-02-02-13.wav",
+          "data/raw/Actor_13/03-01-06-02-01-01-13.wav",
+          "data/raw/Actor_13/03-01-06-02-01-02-13.wav",
+          "data/raw/Actor_13/03-01-06-02-02-01-13.wav",
+          "data/raw/Actor_13/03-01-06-02-02-02-13.wav",
+          "data/raw/Actor_13/03-01-07-01-01-01-13.wav",
+          "data/raw/Actor_13/03-01-07-01-01-02-13.wav",
+          "data/raw/Actor_13/03-01-07-01-02-01-13.wav",
+          "data/raw/Actor_13/03-01-07-01-02-02-13.wav",
+          "data/raw/Actor_13/03-01-07-02-01-02-13.wav",
+          "data/raw/Actor_13/03-01-07-02-02-02-13.wav",
+          "data/raw/Actor_13/03-01-08-02-02-01-13.wav"
+        ]
+      },
+      "head_then_mean": {
+        "mean_prediction_counts": {
+          "01": 16.666666666666668,
+          "02": 0.0,
+          "03": 17.666666666666668,
+          "04": 1.6666666666666667,
+          "05": 6.0,
+          "06": 0.0,
+          "07": 2.0,
+          "08": 16.0
+        },
+        "recall": {
+          "01": {
+            "recordings": 4,
+            "recall_per_seed": [
+              0.5,
+              0.75,
+              1.0
+            ],
+            "mean_recall": 0.75
+          },
+          "02": {
+            "recordings": 8,
+            "recall_per_seed": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "mean_recall": 0.0
+          },
+          "03": {
+            "recordings": 8,
+            "recall_per_seed": [
+              1.0,
+              0.75,
+              0.75
+            ],
+            "mean_recall": 0.8333333333333334
+          },
+          "04": {
+            "recordings": 8,
+            "recall_per_seed": [
+              0.125,
+              0.125,
+              0.0
+            ],
+            "mean_recall": 0.08333333333333333
+          },
+          "05": {
+            "recordings": 8,
+            "recall_per_seed": [
+              0.625,
+              0.75,
+              0.75
+            ],
+            "mean_recall": 0.7083333333333334
+          },
+          "06": {
+            "recordings": 8,
+            "recall_per_seed": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "mean_recall": 0.0
+          },
+          "07": {
+            "recordings": 8,
+            "recall_per_seed": [
+              0.125,
+              0.125,
+              0.5
+            ],
+            "mean_recall": 0.25
+          },
+          "08": {
+            "recordings": 8,
+            "recall_per_seed": [
+              0.75,
+              0.625,
+              0.75
+            ],
+            "mean_recall": 0.7083333333333334
+          }
+        },
+        "largest_confusions": [
+          {
+            "actual": "04",
+            "predicted": "01",
+            "mean_count": 6.333333333333333
+          },
+          {
+            "actual": "02",
+            "predicted": "01",
+            "mean_count": 5.666666666666667
+          },
+          {
+            "actual": "06",
+            "predicted": "08",
+            "mean_count": 5.666666666666667
+          },
+          {
+            "actual": "07",
+            "predicted": "08",
+            "mean_count": 3.0
+          },
+          {
+            "actual": "08",
+            "predicted": "03",
+            "mean_count": 2.3333333333333335
+          },
+          {
+            "actual": "05",
+            "predicted": "03",
+            "mean_count": 2.0
+          }
+        ],
+        "wrong_all_seeds": [
+          "data/raw/Actor_13/03-01-02-01-01-01-13.wav",
+          "data/raw/Actor_13/03-01-02-01-01-02-13.wav",
+          "data/raw/Actor_13/03-01-02-01-02-01-13.wav",
+          "data/raw/Actor_13/03-01-02-01-02-02-13.wav",
+          "data/raw/Actor_13/03-01-02-02-01-01-13.wav",
+          "data/raw/Actor_13/03-01-02-02-01-02-13.wav",
+          "data/raw/Actor_13/03-01-02-02-02-01-13.wav",
+          "data/raw/Actor_13/03-01-02-02-02-02-13.wav",
+          "data/raw/Actor_13/03-01-04-01-01-01-13.wav",
+          "data/raw/Actor_13/03-01-04-01-02-01-13.wav",
+          "data/raw/Actor_13/03-01-04-01-02-02-13.wav",
+          "data/raw/Actor_13/03-01-04-02-01-01-13.wav",
+          "data/raw/Actor_13/03-01-04-02-01-02-13.wav",
+          "data/raw/Actor_13/03-01-04-02-02-01-13.wav",
+          "data/raw/Actor_13/03-01-04-02-02-02-13.wav",
+          "data/raw/Actor_13/03-01-05-01-01-01-13.wav",
+          "data/raw/Actor_13/03-01-05-01-01-02-13.wav",
+          "data/raw/Actor_13/03-01-06-01-01-01-13.wav",
+          "data/raw/Actor_13/03-01-06-01-01-02-13.wav",
+          "data/raw/Actor_13/03-01-06-01-02-01-13.wav",
+          "data/raw/Actor_13/03-01-06-01-02-02-13.wav",
+          "data/raw/Actor_13/03-01-06-02-01-01-13.wav",
+          "data/raw/Actor_13/03-01-06-02-01-02-13.wav",
+          "data/raw/Actor_13/03-01-06-02-02-01-13.wav",
+          "data/raw/Actor_13/03-01-06-02-02-02-13.wav",
+          "data/raw/Actor_13/03-01-07-01-01-01-13.wav",
+          "data/raw/Actor_13/03-01-07-01-01-02-13.wav",
+          "data/raw/Actor_13/03-01-07-01-02-01-13.wav",
+          "data/raw/Actor_13/03-01-07-02-01-02-13.wav",
+          "data/raw/Actor_13/03-01-08-02-01-02-13.wav",
+          "data/raw/Actor_13/03-01-08-02-02-01-13.wav"
+        ],
+        "same_wrong_all_seeds": [
+          "data/raw/Actor_13/03-01-02-01-01-02-13.wav",
+          "data/raw/Actor_13/03-01-02-01-02-02-13.wav",
+          "data/raw/Actor_13/03-01-02-02-01-01-13.wav",
+          "data/raw/Actor_13/03-01-02-02-01-02-13.wav",
+          "data/raw/Actor_13/03-01-04-01-01-01-13.wav",
+          "data/raw/Actor_13/03-01-04-01-02-01-13.wav",
+          "data/raw/Actor_13/03-01-04-01-02-02-13.wav",
+          "data/raw/Actor_13/03-01-04-02-01-02-13.wav",
+          "data/raw/Actor_13/03-01-04-02-02-02-13.wav",
+          "data/raw/Actor_13/03-01-05-01-01-02-13.wav",
+          "data/raw/Actor_13/03-01-06-01-01-01-13.wav",
+          "data/raw/Actor_13/03-01-06-01-01-02-13.wav",
+          "data/raw/Actor_13/03-01-06-01-02-01-13.wav",
+          "data/raw/Actor_13/03-01-06-01-02-02-13.wav",
+          "data/raw/Actor_13/03-01-06-02-01-01-13.wav",
+          "data/raw/Actor_13/03-01-06-02-01-02-13.wav",
+          "data/raw/Actor_13/03-01-06-02-02-02-13.wav",
+          "data/raw/Actor_13/03-01-07-01-01-01-13.wav",
+          "data/raw/Actor_13/03-01-07-01-02-01-13.wav",
+          "data/raw/Actor_13/03-01-07-02-01-02-13.wav",
+          "data/raw/Actor_13/03-01-08-02-01-02-13.wav",
+          "data/raw/Actor_13/03-01-08-02-02-01-13.wav"
+        ]
+      }
+    }
+  },
+  "intensity": {
+    "speaker_09": {
+      "normal": {
+        "mean_then_head": {
+          "scores_per_seed": [
+            0.2476190476190476,
+            0.18681318681318682,
+            0.22354788069073783
+          ],
+          "mean": 0.21932670504099075
+        },
+        "head_then_mean": {
+          "scores_per_seed": [
+            0.24571428571428575,
+            0.18367346938775508,
+            0.18367346938775508
+          ],
+          "mean": 0.20435374149659866
+        },
+        "recordings": 28
+      },
+      "strong": {
+        "mean_then_head": {
+          "scores_per_seed": [
+            0.6581347224204367,
+            0.6304267161410018,
+            0.6647828362114075
+          ],
+          "mean": 0.6511147582576152
+        },
+        "head_then_mean": {
+          "scores_per_seed": [
+            0.5635792778649922,
+            0.509680795395081,
+            0.509680795395081
+          ],
+          "mean": 0.5276469562183848
+        },
+        "recordings": 28
+      }
+    },
+    "fold_1_peers": {
+      "normal": {
+        "mean_then_head": {
+          "scores_per_seed": [
+            0.7405855474178455,
+            0.7543720254900379,
+            0.7607466577227937
+          ],
+          "mean": 0.7519014102102256
+        },
+        "head_then_mean": {
+          "scores_per_seed": [
+            0.8325224671808522,
+            0.8314120799835086,
+            0.8406226756751495
+          ],
+          "mean": 0.83485240761317
+        },
+        "recordings": 84
+      },
+      "strong": {
+        "mean_then_head": {
+          "scores_per_seed": [
+            0.8222948268754314,
+            0.8223120510305865,
+            0.7993582808028812
+          ],
+          "mean": 0.8146550529029662
+        },
+        "head_then_mean": {
+          "scores_per_seed": [
+            0.8323809523809524,
+            0.86779903281442,
+            0.8549910490511995
+          ],
+          "mean": 0.8517236780821906
+        },
+        "recordings": 84
+      }
+    },
+    "speaker_13": {
+      "normal": {
+        "mean_then_head": {
+          "scores_per_seed": [
+            0.3469102326245184,
+            0.34285714285714286,
+            0.2902906617192332
+          ],
+          "mean": 0.32668601240029815
+        },
+        "head_then_mean": {
+          "scores_per_seed": [
+            0.27619047619047615,
+            0.32653061224489793,
+            0.3515151515151515
+          ],
+          "mean": 0.31807874665017516
+        },
+        "recordings": 28
+      },
+      "strong": {
+        "mean_then_head": {
+          "scores_per_seed": [
+            0.30586080586080583,
+            0.3247165532879818,
+            0.24081632653061222
+          ],
+          "mean": 0.2904645618931333
+        },
+        "head_then_mean": {
+          "scores_per_seed": [
+            0.3238095238095238,
+            0.2695970695970696,
+            0.36487322201607914
+          ],
+          "mean": 0.3194266051408909
+        },
+        "recordings": 28
+      }
+    },
+    "fold_4_peers": {
+      "normal": {
+        "mean_then_head": {
+          "scores_per_seed": [
+            0.5796245355068884,
+            0.5980891353196797,
+            0.5450014971023375
+          ],
+          "mean": 0.5742383893096351
+        },
+        "head_then_mean": {
+          "scores_per_seed": [
+            0.7010399021268586,
+            0.6553061224489796,
+            0.6869870094907112
+          ],
+          "mean": 0.6811110113555164
+        },
+        "recordings": 84
+      },
+      "strong": {
+        "mean_then_head": {
+          "scores_per_seed": [
+            0.7704582500798848,
+            0.7507797270955165,
+            0.7545400686555341
+          ],
+          "mean": 0.7585926819436452
+        },
+        "head_then_mean": {
+          "scores_per_seed": [
+            0.7636891763207553,
+            0.7590239698049546,
+            0.7508065009992503
+          ],
+          "mean": 0.7578398823749867
+        },
+        "recordings": 84
+      }
+    }
+  }
+}

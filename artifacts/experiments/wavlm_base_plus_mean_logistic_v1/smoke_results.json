@@ -1,0 +1,25 @@
+{
+  "recordings": 5,
+  "paths": [
+    "data/raw/Actor_01/03-01-01-01-01-01-01.wav",
+    "data/raw/Actor_01/03-01-01-01-01-02-01.wav",
+    "data/raw/Actor_01/03-01-01-01-02-01-01.wav",
+    "data/raw/Actor_01/03-01-01-01-02-02-01.wav",
+    "data/raw/Actor_01/03-01-02-01-01-01-01.wav"
+  ],
+  "shape": [
+    5,
+    768
+  ],
+  "frames": [
+    164,
+    166,
+    163,
+    158,
+    176
+  ],
+  "finite": true,
+  "seconds_excluding_model_load": 1.7678339999984019,
+  "estimated_full_extraction_minutes": 7.071335999993607,
+  "note": "Timing estimate only; no accuracy evaluation."
+}

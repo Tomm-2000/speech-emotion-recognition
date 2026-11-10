@@ -1,0 +1,18 @@
+{
+  "manifest_sha256": "0dc5dd4dbbe0e7bba8546b96c8a695ebb1e6e38b8fb26af2d08255a305b61ae3",
+  "folds_sha256": "97ec7b7d50241bcb235e9cd604e5548d84821eae943cdac91e9043da857f0b93",
+  "reference_features_sha256": "6fd1bb8c97dafb68f5cdd3d3733067100c6d9bb64f665729bc83f089b0fea39e",
+  "candidate_features_sha256": "11a0957ae39990ffea60dcf9f8bc968f27c7ab466650f32b9ac8089eb962f248",
+  "runner_sha256": "7ae19a1241945fd5a516059ad97c8fdfe58874d93bb34aceb74a311397e86c9a",
+  "previous_runner_sha256": "8a6bbd173d55684e343b1fbdf8e4bc1e2801f147bbae81b55120144f6dc2c971",
+  "versions": {
+    "numpy": "2.5.4",
+    "torch": "2.15.0+cpu",
+    "transformers": "5.22.2",
+    "huggingface-hub": "2.4.0",
+    "librosa": "1.0.0",
+    "scikit-learn": "1.9.1",
+    "PyYAML": "6.0.2"
+  },
+  "candidate_revision": "4c66d4806a428f2e922ccfa1a962776e232d487b"
+}

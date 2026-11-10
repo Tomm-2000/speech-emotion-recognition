@@ -1,0 +1,17 @@
+#EXTM3U
+#EXTINF:-1,Pair 1 target_error speaker 09
+C:\Users\CS\Downloads\speech-emotion-recognition\data\raw\Actor_09\03-01-01-01-01-01-09.wav
+#EXTINF:-1,Pair 1 matched_correct speaker 03
+C:\Users\CS\Downloads\speech-emotion-recognition\data\raw\Actor_03\03-01-01-01-01-01-03.wav
+#EXTINF:-1,Pair 2 target_error speaker 09
+C:\Users\CS\Downloads\speech-emotion-recognition\data\raw\Actor_09\03-01-02-02-02-02-09.wav
+#EXTINF:-1,Pair 2 matched_correct speaker 03
+C:\Users\CS\Downloads\speech-emotion-recognition\data\raw\Actor_03\03-01-02-02-02-02-03.wav
+#EXTINF:-1,Pair 3 target_error speaker 13
+C:\Users\CS\Downloads\speech-emotion-recognition\data\raw\Actor_13\03-01-02-01-01-02-13.wav
+#EXTINF:-1,Pair 3 matched_correct speaker 14
+C:\Users\CS\Downloads\speech-emotion-recognition\data\raw\Actor_14\03-01-02-01-01-02-14.wav
+#EXTINF:-1,Pair 4 target_error speaker 13
+C:\Users\CS\Downloads\speech-emotion-recognition\data\raw\Actor_13\03-01-04-01-01-01-13.wav
+#EXTINF:-1,Pair 4 matched_correct speaker 16
+C:\Users\CS\Downloads\speech-emotion-recognition\data\raw\Actor_16\03-01-04-01-01-01-16.wav

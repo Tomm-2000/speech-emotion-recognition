@@ -1,0 +1,383 @@
+{
+  "speaker_results": [
+    {
+      "speaker": "01",
+      "fold": "fold_2",
+      "wav2vec2": 0.7585200746965453,
+      "wavlm": 0.671974387841261,
+      "equal_ensemble": 0.7550928603560182,
+      "delta_vs_wav2vec2": -0.0034272143405270628,
+      "delta_vs_wavlm": 0.08311847251475724,
+      "delta_vs_best_single": -0.0034272143405270628
+    },
+    {
+      "speaker": "02",
+      "fold": "fold_2",
+      "wav2vec2": 0.8706730769230769,
+      "wavlm": 0.8392395014686036,
+      "equal_ensemble": 0.8703404438698557,
+      "delta_vs_wav2vec2": -0.00033263305322128733,
+      "delta_vs_wavlm": 0.031100942401252052,
+      "delta_vs_best_single": -0.00033263305322128733
+    },
+    {
+      "speaker": "03",
+      "fold": "fold_1",
+      "wav2vec2": 0.8575042196365725,
+      "wavlm": 0.8594241542770955,
+      "equal_ensemble": 0.920500700280112,
+      "delta_vs_wav2vec2": 0.06299648064353947,
+      "delta_vs_wavlm": 0.061076546003016485,
+      "delta_vs_best_single": 0.061076546003016485
+    },
+    {
+      "speaker": "04",
+      "fold": "fold_2",
+      "wav2vec2": 0.8444000626566416,
+      "wavlm": 0.7072303921568627,
+      "equal_ensemble": 0.7706424734965757,
+      "delta_vs_wav2vec2": -0.07375758916006592,
+      "delta_vs_wavlm": 0.06341208133971299,
+      "delta_vs_best_single": -0.07375758916006592
+    },
+    {
+      "speaker": "05",
+      "fold": "fold_2",
+      "wav2vec2": 0.7641923436041083,
+      "wavlm": 0.846781015037594,
+      "equal_ensemble": 0.864401364459414,
+      "delta_vs_wav2vec2": 0.1002090208553057,
+      "delta_vs_wavlm": 0.017620349421820003,
+      "delta_vs_best_single": 0.017620349421820003
+    },
+    {
+      "speaker": "07",
+      "fold": "fold_3",
+      "wav2vec2": 0.7172419524489958,
+      "wavlm": 0.7707758980785298,
+      "equal_ensemble": 0.7778359926966738,
+      "delta_vs_wav2vec2": 0.060594040247678005,
+      "delta_vs_wavlm": 0.007060094618144053,
+      "delta_vs_best_single": 0.007060094618144053
+    },
+    {
+      "speaker": "08",
+      "fold": "fold_3",
+      "wav2vec2": 0.8740954715219421,
+      "wavlm": 0.7767436639727662,
+      "equal_ensemble": 0.8383288462913076,
+      "delta_vs_wav2vec2": -0.03576662523063456,
+      "delta_vs_wavlm": 0.061585182318541376,
+      "delta_vs_best_single": -0.03576662523063456
+    },
+    {
+      "speaker": "09",
+      "fold": "fold_1",
+      "wav2vec2": 0.35138888888888886,
+      "wavlm": 0.5130640193140192,
+      "equal_ensemble": 0.4353535353535354,
+      "delta_vs_wav2vec2": 0.08396464646464652,
+      "delta_vs_wavlm": -0.07771048396048386,
+      "delta_vs_best_single": -0.07771048396048386
+    },
+    {
+      "speaker": "10",
+      "fold": "fold_3",
+      "wav2vec2": 0.5917010663914688,
+      "wavlm": 0.6941892666157372,
+      "equal_ensemble": 0.7033525910364146,
+      "delta_vs_wav2vec2": 0.11165152464494577,
+      "delta_vs_wavlm": 0.009163324420677355,
+      "delta_vs_best_single": 0.009163324420677355
+    },
+    {
+      "speaker": "11",
+      "fold": "fold_3",
+      "wav2vec2": 0.774787055050213,
+      "wavlm": 0.7089370575245187,
+      "equal_ensemble": 0.8054615705931496,
+      "delta_vs_wav2vec2": 0.030674515542936653,
+      "delta_vs_wavlm": 0.09652451306863086,
+      "delta_vs_best_single": 0.030674515542936653
+    },
+    {
+      "speaker": "12",
+      "fold": "fold_1",
+      "wav2vec2": 0.6899179864253393,
+      "wavlm": 0.8195144724556489,
+      "equal_ensemble": 0.8250379318394023,
+      "delta_vs_wav2vec2": 0.13511994541406303,
+      "delta_vs_wavlm": 0.005523459383753426,
+      "delta_vs_best_single": 0.005523459383753426
+    },
+    {
+      "speaker": "13",
+      "fold": "fold_4",
+      "wav2vec2": 0.37251683501683497,
+      "wavlm": 0.4486300249458145,
+      "equal_ensemble": 0.4374458874458874,
+      "delta_vs_wav2vec2": 0.06492905242905245,
+      "delta_vs_wavlm": -0.011184137499927083,
+      "delta_vs_best_single": -0.011184137499927083
+    },
+    {
+      "speaker": "14",
+      "fold": "fold_4",
+      "wav2vec2": 0.7810134310134309,
+      "wavlm": 0.8262598899208806,
+      "equal_ensemble": 0.9039846977927473,
+      "delta_vs_wav2vec2": 0.12297126677931636,
+      "delta_vs_wavlm": 0.07772480787186664,
+      "delta_vs_best_single": 0.07772480787186664
+    },
+    {
+      "speaker": "16",
+      "fold": "fold_4",
+      "wav2vec2": 0.6502311266319887,
+      "wavlm": 0.6783420655711677,
+      "equal_ensemble": 0.6968150109694228,
+      "delta_vs_wav2vec2": 0.0465838843374341,
+      "delta_vs_wavlm": 0.01847294539825506,
+      "delta_vs_best_single": 0.01847294539825506
+    },
+    {
+      "speaker": "17",
+      "fold": "fold_4",
+      "wav2vec2": 0.5995228455754772,
+      "wavlm": 0.5225003044696139,
+      "equal_ensemble": 0.5698225385725386,
+      "delta_vs_wav2vec2": -0.029700307002938575,
+      "delta_vs_wavlm": 0.04732223410292469,
+      "delta_vs_best_single": -0.029700307002938575
+    },
+    {
+      "speaker": "18",
+      "fold": "fold_1",
+      "wav2vec2": 0.6781210189878921,
+      "wavlm": 0.880338572676034,
+      "equal_ensemble": 0.7999120160884867,
+      "delta_vs_wav2vec2": 0.1217909971005946,
+      "delta_vs_wavlm": -0.08042655658754727,
+      "delta_vs_best_single": -0.08042655658754727
+    },
+    {
+      "speaker": "19",
+      "fold": "fold_5",
+      "wav2vec2": 0.72640639589169,
+      "wavlm": 0.7508679669573632,
+      "equal_ensemble": 0.7571428571428571,
+      "delta_vs_wav2vec2": 0.030736461251167135,
+      "delta_vs_wavlm": 0.0062748901854938754,
+      "delta_vs_best_single": 0.0062748901854938754
+    },
+    {
+      "speaker": "20",
+      "fold": "fold_5",
+      "wav2vec2": 0.7418113577169305,
+      "wavlm": 0.6312611088825923,
+      "equal_ensemble": 0.6780117349970292,
+      "delta_vs_wav2vec2": -0.06379962271990136,
+      "delta_vs_wavlm": 0.04675062611443681,
+      "delta_vs_best_single": -0.06379962271990136
+    },
+    {
+      "speaker": "22",
+      "fold": "fold_5",
+      "wav2vec2": 0.7634691697191698,
+      "wavlm": 0.7821314102564102,
+      "equal_ensemble": 0.7781415643180349,
+      "delta_vs_wav2vec2": 0.014672394598865157,
+      "delta_vs_wavlm": -0.003989845938375258,
+      "delta_vs_best_single": -0.003989845938375258
+    },
+    {
+      "speaker": "23",
+      "fold": "fold_5",
+      "wav2vec2": 0.695464623096202,
+      "wavlm": 0.5677310061384471,
+      "equal_ensemble": 0.7213405875170581,
+      "delta_vs_wav2vec2": 0.025875964420856046,
+      "delta_vs_wavlm": 0.15360958137861103,
+      "delta_vs_best_single": 0.025875964420856046
+    }
+  ],
+  "class_results": [
+    {
+      "emotion": "neutral",
+      "support": 80,
+      "models": {
+        "wav2vec2": {
+          "precision": 0.5909090909090909,
+          "recall": 0.65,
+          "f1": 0.6190476190476191
+        },
+        "wavlm": {
+          "precision": 0.5934065934065934,
+          "recall": 0.675,
+          "f1": 0.631578947368421
+        },
+        "equal_ensemble": {
+          "precision": 0.6170212765957447,
+          "recall": 0.725,
+          "f1": 0.6666666666666666
+        }
+      }
+    },
+    {
+      "emotion": "calm",
+      "support": 160,
+      "models": {
+        "wav2vec2": {
+          "precision": 0.7814569536423841,
+          "recall": 0.7375,
+          "f1": 0.7588424437299035
+        },
+        "wavlm": {
+          "precision": 0.7310344827586207,
+          "recall": 0.6625,
+          "f1": 0.6950819672131148
+        },
+        "equal_ensemble": {
+          "precision": 0.8040540540540541,
+          "recall": 0.74375,
+          "f1": 0.7727272727272727
+        }
+      }
+    },
+    {
+      "emotion": "happy",
+      "support": 160,
+      "models": {
+        "wav2vec2": {
+          "precision": 0.6623376623376623,
+          "recall": 0.6375,
+          "f1": 0.6496815286624203
+        },
+        "wavlm": {
+          "precision": 0.6878980891719745,
+          "recall": 0.675,
+          "f1": 0.6813880126182965
+        },
+        "equal_ensemble": {
+          "precision": 0.726027397260274,
+          "recall": 0.6625,
+          "f1": 0.6928104575163399
+        }
+      }
+    },
+    {
+      "emotion": "sad",
+      "support": 160,
+      "models": {
+        "wav2vec2": {
+          "precision": 0.5689655172413793,
+          "recall": 0.61875,
+          "f1": 0.592814371257485
+        },
+        "wavlm": {
+          "precision": 0.5355191256830601,
+          "recall": 0.6125,
+          "f1": 0.5714285714285714
+        },
+        "equal_ensemble": {
+          "precision": 0.5921787709497207,
+          "recall": 0.6625,
+          "f1": 0.6253687315634219
+        }
+      }
+    },
+    {
+      "emotion": "angry",
+      "support": 160,
+      "models": {
+        "wav2vec2": {
+          "precision": 0.7707006369426752,
+          "recall": 0.75625,
+          "f1": 0.7634069400630915
+        },
+        "wavlm": {
+          "precision": 0.8590604026845637,
+          "recall": 0.8,
+          "f1": 0.8284789644012945
+        },
+        "equal_ensemble": {
+          "precision": 0.8503401360544217,
+          "recall": 0.78125,
+          "f1": 0.8143322475570033
+        }
+      }
+    },
+    {
+      "emotion": "fearful",
+      "support": 160,
+      "models": {
+        "wav2vec2": {
+          "precision": 0.7770700636942676,
+          "recall": 0.7625,
+          "f1": 0.7697160883280757
+        },
+        "wavlm": {
+          "precision": 0.7806451612903226,
+          "recall": 0.75625,
+          "f1": 0.7682539682539683
+        },
+        "equal_ensemble": {
+          "precision": 0.8023952095808383,
+          "recall": 0.8375,
+          "f1": 0.8195718654434251
+        }
+      }
+    },
+    {
+      "emotion": "disgust",
+      "support": 160,
+      "models": {
+        "wav2vec2": {
+          "precision": 0.8503401360544217,
+          "recall": 0.78125,
+          "f1": 0.8143322475570033
+        },
+        "wavlm": {
+          "precision": 0.868421052631579,
+          "recall": 0.825,
+          "f1": 0.8461538461538461
+        },
+        "equal_ensemble": {
+          "precision": 0.8933333333333333,
+          "recall": 0.8375,
+          "f1": 0.864516129032258
+        }
+      }
+    },
+    {
+      "emotion": "surprised",
+      "support": 160,
+      "models": {
+        "wav2vec2": {
+          "precision": 0.7441860465116279,
+          "recall": 0.8,
+          "f1": 0.7710843373493976
+        },
+        "wavlm": {
+          "precision": 0.8035714285714286,
+          "recall": 0.84375,
+          "f1": 0.823170731707317
+        },
+        "equal_ensemble": {
+          "precision": 0.7869822485207101,
+          "recall": 0.83125,
+          "f1": 0.8085106382978723
+        }
+      }
+    }
+  ],
+  "error_overlap_counts": {
+    "both_individual_models_correct": 750,
+    "exactly_one_individual_model_correct": 249,
+    "both_individual_models_wrong": 201,
+    "ensemble_correct_when_exactly_one_correct": 161,
+    "ensemble_correct_when_both_wrong": 4,
+    "ensemble_wrong_when_both_correct": 0
+  },
+  "note": "Development diagnostics. Per-class scores use pooled out-of-fold predictions and need not reproduce the mean of five fold-level Macro F1 values."
+}

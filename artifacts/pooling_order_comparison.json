@@ -1,0 +1,155 @@
+{
+  "experiment": "processing_before_vs_after_time_mean",
+  "complete": true,
+  "config": {
+    "seed": 42,
+    "max_epochs": 100,
+    "patience": 12,
+    "batch_size": 32,
+    "hidden_units": 128,
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0,
+    "device": "cpu",
+    "torch_version": "2.15.0+cpu",
+    "normalization": "shared_training_utterance_mean_scaler",
+    "inner_split": "next_fold_cyclically",
+    "feature_directory": "wav2vec2_frames_dev",
+    "folds": {
+      "fold_1": [
+        "03",
+        "09",
+        "12",
+        "18"
+      ],
+      "fold_2": [
+        "01",
+        "02",
+        "04",
+        "05"
+      ],
+      "fold_3": [
+        "07",
+        "08",
+        "10",
+        "11"
+      ],
+      "fold_4": [
+        "13",
+        "14",
+        "16",
+        "17"
+      ],
+      "fold_5": [
+        "19",
+        "20",
+        "22",
+        "23"
+      ]
+    }
+  },
+  "records": [
+    {
+      "fold": "fold_1",
+      "mode": "mean_then_head",
+      "inner_validation": "fold_2",
+      "selected_epochs": 26,
+      "inner_macro_f1": 0.76970308423847,
+      "training_macro_f1": 1.0,
+      "evaluation_macro_f1": 0.6832977838225502,
+      "elapsed_seconds": 43.27048320000176
+    },
+    {
+      "fold": "fold_1",
+      "mode": "head_then_mean",
+      "inner_validation": "fold_2",
+      "selected_epochs": 8,
+      "inner_macro_f1": 0.7863658359827204,
+      "training_macro_f1": 0.9911941515687783,
+      "evaluation_macro_f1": 0.7249102913933354,
+      "elapsed_seconds": 23.95196219999343
+    },
+    {
+      "fold": "fold_2",
+      "mode": "mean_then_head",
+      "inner_validation": "fold_3",
+      "selected_epochs": 8,
+      "inner_macro_f1": 0.7607085234659381,
+      "training_macro_f1": 1.0,
+      "evaluation_macro_f1": 0.7829896416742852,
+      "elapsed_seconds": 19.823845600010827
+    },
+    {
+      "fold": "fold_2",
+      "mode": "head_then_mean",
+      "inner_validation": "fold_3",
+      "selected_epochs": 8,
+      "inner_macro_f1": 0.7435921009807716,
+      "training_macro_f1": 0.9847309116391858,
+      "evaluation_macro_f1": 0.8103955847787367,
+      "elapsed_seconds": 30.52028369999607
+    },
+    {
+      "fold": "fold_3",
+      "mode": "mean_then_head",
+      "inner_validation": "fold_4",
+      "selected_epochs": 21,
+      "inner_macro_f1": 0.5617606176945115,
+      "training_macro_f1": 1.0,
+      "evaluation_macro_f1": 0.7303964406446557,
+      "elapsed_seconds": 34.81743159997859
+    },
+    {
+      "fold": "fold_3",
+      "mode": "head_then_mean",
+      "inner_validation": "fold_4",
+      "selected_epochs": 9,
+      "inner_macro_f1": 0.6234542465537266,
+      "training_macro_f1": 0.9936306778268993,
+      "evaluation_macro_f1": 0.7506680526789803,
+      "elapsed_seconds": 36.33344450002187
+    },
+    {
+      "fold": "fold_4",
+      "mode": "mean_then_head",
+      "inner_validation": "fold_5",
+      "selected_epochs": 15,
+      "inner_macro_f1": 0.725611000597278,
+      "training_macro_f1": 1.0,
+      "evaluation_macro_f1": 0.6047851231211074,
+      "elapsed_seconds": 33.21493170000031
+    },
+    {
+      "fold": "fold_4",
+      "mode": "head_then_mean",
+      "inner_validation": "fold_5",
+      "selected_epochs": 9,
+      "inner_macro_f1": 0.7658171612174698,
+      "training_macro_f1": 0.9980429853855817,
+      "evaluation_macro_f1": 0.630536732024216,
+      "elapsed_seconds": 26.661359599995194
+    },
+    {
+      "fold": "fold_5",
+      "mode": "mean_then_head",
+      "inner_validation": "fold_1",
+      "selected_epochs": 19,
+      "inner_macro_f1": 0.6747599724122759,
+      "training_macro_f1": 1.0,
+      "evaluation_macro_f1": 0.7273911387338496,
+      "elapsed_seconds": 27.121401600015815
+    },
+    {
+      "fold": "fold_5",
+      "mode": "head_then_mean",
+      "inner_validation": "fold_1",
+      "selected_epochs": 11,
+      "inner_macro_f1": 0.7443576700225266,
+      "training_macro_f1": 0.9970965309200603,
+      "evaluation_macro_f1": 0.7647107749076477,
+      "elapsed_seconds": 43.80508920000284
+    }
+  ],
+  "elapsed_seconds": 319.62858249997953,
+  "note": "One-seed exploratory development comparison. Epochs selected internally; outer speakers excluded. Test data and saved classifiers were not modified."
+}

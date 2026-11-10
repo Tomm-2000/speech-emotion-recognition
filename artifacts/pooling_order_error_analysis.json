@@ -1,0 +1,648 @@
+{
+  "seeds": [
+    42,
+    7,
+    123
+  ],
+  "baseline": "mean_then_head",
+  "candidate": "head_then_mean",
+  "speaker_results": [
+    {
+      "speaker": "01",
+      "fold": "fold_2",
+      "baseline_mean": 0.7353246455413638,
+      "candidate_mean": 0.7282256590794077,
+      "mean_difference": -0.00709898646195591,
+      "seed_scores": {
+        "mean_then_head": [
+          0.6941128316128315,
+          0.7295827710301395,
+          0.7822783339811203
+        ],
+        "head_then_mean": [
+          0.7867617880485527,
+          0.7893542302211033,
+          0.6085609589685677
+        ]
+      },
+      "seed_differences": [
+        0.09264895643572113,
+        0.05977145919096383,
+        -0.1737173750125527
+      ]
+    },
+    {
+      "speaker": "02",
+      "fold": "fold_2",
+      "baseline_mean": 0.8952538610626846,
+      "candidate_mean": 0.8809311954242295,
+      "mean_difference": -0.014322665638455115,
+      "seed_scores": {
+        "mean_then_head": [
+          0.8418248418248417,
+          0.9142857142857144,
+          0.9296510270774976
+        ],
+        "head_then_mean": [
+          0.8555021367521367,
+          0.8757417419182125,
+          0.9115497076023391
+        ]
+      },
+      "seed_differences": [
+        0.01367729492729497,
+        -0.038543972367501844,
+        -0.018101319475158473
+      ]
+    },
+    {
+      "speaker": "03",
+      "fold": "fold_1",
+      "baseline_mean": 0.8443742668007373,
+      "candidate_mean": 0.8895413614163615,
+      "mean_difference": 0.045167094615624036,
+      "seed_scores": {
+        "mean_then_head": [
+          0.8381944444444445,
+          0.8381944444444445,
+          0.8567339115133232
+        ],
+        "head_then_mean": [
+          0.8740079365079365,
+          0.888167735042735,
+          0.9064484126984127
+        ]
+      },
+      "seed_differences": [
+        0.03581349206349205,
+        0.04997329059829059,
+        0.049714501185089466
+      ]
+    },
+    {
+      "speaker": "04",
+      "fold": "fold_2",
+      "baseline_mean": 0.7690900602665308,
+      "candidate_mean": 0.751663346120036,
+      "mean_difference": -0.017426714146494732,
+      "seed_scores": {
+        "mean_then_head": [
+          0.7622880591630592,
+          0.7740845959595959,
+          0.7708975256769374
+        ],
+        "head_then_mean": [
+          0.741663930324921,
+          0.7756772985113778,
+          0.7376488095238095
+        ]
+      },
+      "seed_differences": [
+        -0.020624128838138245,
+        0.0015927025517818993,
+        -0.033248716153127855
+      ]
+    },
+    {
+      "speaker": "05",
+      "fold": "fold_2",
+      "baseline_mean": 0.8113851780744196,
+      "candidate_mean": 0.7789499000025316,
+      "mean_difference": -0.03243527807188795,
+      "seed_scores": {
+        "mean_then_head": [
+          0.7916027814634625,
+          0.8468438252493979,
+          0.7957089275103981
+        ],
+        "head_then_mean": [
+          0.8398192450824029,
+          0.7547941824257614,
+          0.7422362724994305
+        ]
+      },
+      "seed_differences": [
+        0.048216463618940386,
+        -0.09204964282363659,
+        -0.05347265501096765
+      ]
+    },
+    {
+      "speaker": "07",
+      "fold": "fold_3",
+      "baseline_mean": 0.7275332703931775,
+      "candidate_mean": 0.7340759003781449,
+      "mean_difference": 0.006542629984967352,
+      "seed_scores": {
+        "mean_then_head": [
+          0.7285270467836258,
+          0.7629667116509222,
+          0.6911060527449846
+        ],
+        "head_then_mean": [
+          0.7368336707152496,
+          0.713877217553688,
+          0.751516812865497
+        ]
+      },
+      "seed_differences": [
+        0.008306623931623847,
+        -0.049089494097234176,
+        0.060410760120512386
+      ]
+    },
+    {
+      "speaker": "08",
+      "fold": "fold_3",
+      "baseline_mean": 0.8283336467740492,
+      "candidate_mean": 0.8275134036356945,
+      "mean_difference": -0.0008202431383546779,
+      "seed_scores": {
+        "mean_then_head": [
+          0.8066367842683633,
+          0.8282256121071911,
+          0.8501385439465934
+        ],
+        "head_then_mean": [
+          0.8108201235039469,
+          0.8240308302808302,
+          0.8476892571223066
+        ]
+      },
+      "seed_differences": [
+        0.004183339235583672,
+        -0.004194781826360905,
+        -0.0024492868242868004
+      ]
+    },
+    {
+      "speaker": "09",
+      "fold": "fold_1",
+      "baseline_mean": 0.41570074456614775,
+      "candidate_mean": 0.34949217905774727,
+      "mean_difference": -0.06620856550840044,
+      "seed_scores": {
+        "mean_then_head": [
+          0.4299525020651276,
+          0.3933080808080808,
+          0.42384165082523495
+        ],
+        "head_then_mean": [
+          0.3741759869136124,
+          0.33715027512981477,
+          0.33715027512981477
+        ]
+      },
+      "seed_differences": [
+        -0.05577651515151516,
+        -0.056157805678266004,
+        -0.08669137569542018
+      ]
+    },
+    {
+      "speaker": "10",
+      "fold": "fold_3",
+      "baseline_mean": 0.578398053185205,
+      "candidate_mean": 0.6090243636073324,
+      "mean_difference": 0.03062631042212749,
+      "seed_scores": {
+        "mean_then_head": [
+          0.5990225256769375,
+          0.527228126405758,
+          0.6089435074729193
+        ],
+        "head_then_mean": [
+          0.6128093720005485,
+          0.6142534429719784,
+          0.6000102758494703
+        ]
+      },
+      "seed_differences": [
+        0.013786846323611046,
+        0.08702531656622037,
+        -0.008933231623448945
+      ]
+    },
+    {
+      "speaker": "11",
+      "fold": "fold_3",
+      "baseline_mean": 0.7529026249807984,
+      "candidate_mean": 0.7947091701155169,
+      "mean_difference": 0.04180654513471856,
+      "seed_scores": {
+        "mean_then_head": [
+          0.7454248366013072,
+          0.721290637467108,
+          0.7919924008739798
+        ],
+        "head_then_mean": [
+          0.7797163620693033,
+          0.7638538727354517,
+          0.8405572755417957
+        ]
+      },
+      "seed_differences": [
+        0.034291525467996076,
+        0.04256323526834371,
+        0.048564874667815894
+      ]
+    },
+    {
+      "speaker": "12",
+      "fold": "fold_1",
+      "baseline_mean": 0.6773880871307342,
+      "candidate_mean": 0.7732567960218889,
+      "mean_difference": 0.09586870889115473,
+      "seed_scores": {
+        "mean_then_head": [
+          0.6891198466566113,
+          0.6807140979935098,
+          0.6623303167420814
+        ],
+        "head_then_mean": [
+          0.7791478333757745,
+          0.7518420745491179,
+          0.7887804801407743
+        ]
+      },
+      "seed_differences": [
+        0.09002798671916323,
+        0.0711279765556081,
+        0.12645016339869286
+      ]
+    },
+    {
+      "speaker": "13",
+      "fold": "fold_4",
+      "baseline_mean": 0.32139789748771447,
+      "candidate_mean": 0.32411393155958373,
+      "mean_difference": 0.002716034071869322,
+      "seed_scores": {
+        "mean_then_head": [
+          0.3460359625119351,
+          0.3294379231879232,
+          0.288719806763285
+        ],
+        "head_then_mean": [
+          0.30518162393162396,
+          0.30514790764790767,
+          0.36201226309921963
+        ]
+      },
+      "seed_differences": [
+        -0.04085433858031112,
+        -0.02429001554001553,
+        0.07329245633593462
+      ]
+    },
+    {
+      "speaker": "14",
+      "fold": "fold_4",
+      "baseline_mean": 0.8100873505865765,
+      "candidate_mean": 0.8630900954623865,
+      "mean_difference": 0.05300274487580988,
+      "seed_scores": {
+        "mean_then_head": [
+          0.8288625976706472,
+          0.7947966636047131,
+          0.8066027904843694
+        ],
+        "head_then_mean": [
+          0.8890079057938964,
+          0.8288802700567407,
+          0.8713821105365223
+        ]
+      },
+      "seed_differences": [
+        0.06014530812324925,
+        0.03408360645202757,
+        0.06477932005215281
+      ]
+    },
+    {
+      "speaker": "16",
+      "fold": "fold_4",
+      "baseline_mean": 0.6170143150895866,
+      "candidate_mean": 0.6218059132255053,
+      "mean_difference": 0.004791598135918636,
+      "seed_scores": {
+        "mean_then_head": [
+          0.6181382218087627,
+          0.6451861919914658,
+          0.5877185314685315
+        ],
+        "head_then_mean": [
+          0.6449325184619302,
+          0.6068348930481283,
+          0.6136503281664573
+        ]
+      },
+      "seed_differences": [
+        0.02679429665316757,
+        -0.03835129894333744,
+        0.02593179669792578
+      ]
+    },
+    {
+      "speaker": "17",
+      "fold": "fold_4",
+      "baseline_mean": 0.5801929133817678,
+      "candidate_mean": 0.6446452362996481,
+      "mean_difference": 0.06445232291788021,
+      "seed_scores": {
+        "mean_then_head": [
+          0.6203382788522107,
+          0.5451048951048951,
+          0.5751355661881977
+        ],
+        "head_then_mean": [
+          0.6277328431372549,
+          0.6386783559577678,
+          0.6675245098039215
+        ]
+      },
+      "seed_differences": [
+        0.007394564285044147,
+        0.09357346085287266,
+        0.0923889436157238
+      ]
+    },
+    {
+      "speaker": "18",
+      "fold": "fold_1",
+      "baseline_mean": 0.6758195647804781,
+      "candidate_mean": 0.725528336615798,
+      "mean_difference": 0.04970877183531982,
+      "seed_scores": {
+        "mean_then_head": [
+          0.6803944604157453,
+          0.6794564536340852,
+          0.6676077802916038
+        ],
+        "head_then_mean": [
+          0.7166368740478648,
+          0.7537045857479294,
+          0.7062435500515996
+        ]
+      },
+      "seed_differences": [
+        0.03624241363211955,
+        0.07424813211384418,
+        0.03863576975999572
+      ]
+    },
+    {
+      "speaker": "19",
+      "fold": "fold_5",
+      "baseline_mean": 0.6734976646160856,
+      "candidate_mean": 0.7127426835147425,
+      "mean_difference": 0.03924501889865665,
+      "seed_scores": {
+        "mean_then_head": [
+          0.6788476874003191,
+          0.6632305194805195,
+          0.6784147869674185
+        ],
+        "head_then_mean": [
+          0.7416316526610643,
+          0.7402919180492711,
+          0.6563044798338916
+        ]
+      },
+      "seed_differences": [
+        0.06278396526074526,
+        0.0770613985687516,
+        -0.022110307133526907
+      ]
+    },
+    {
+      "speaker": "20",
+      "fold": "fold_5",
+      "baseline_mean": 0.725920305757767,
+      "candidate_mean": 0.7184582621603083,
+      "mean_difference": -0.007462043597458797,
+      "seed_scores": {
+        "mean_then_head": [
+          0.7225352262116967,
+          0.7235294117647059,
+          0.7316962792968984
+        ],
+        "head_then_mean": [
+          0.7295751633986929,
+          0.7242063492063492,
+          0.7015932738758826
+        ]
+      },
+      "seed_differences": [
+        0.007039937186996137,
+        0.0006769374416433216,
+        -0.03010300542101585
+      ]
+    },
+    {
+      "speaker": "22",
+      "fold": "fold_5",
+      "baseline_mean": 0.8255213447748613,
+      "candidate_mean": 0.8331781555566722,
+      "mean_difference": 0.007656810781810797,
+      "seed_scores": {
+        "mean_then_head": [
+          0.8182289932289932,
+          0.8211917779932485,
+          0.8371432631023423
+        ],
+        "head_then_mean": [
+          0.8765873015873016,
+          0.8309430907256994,
+          0.7920040743570155
+        ]
+      },
+      "seed_differences": [
+        0.05835830835830835,
+        0.00975131273245089,
+        -0.04513918874532685
+      ]
+    },
+    {
+      "speaker": "23",
+      "fold": "fold_5",
+      "baseline_mean": 0.646611921121725,
+      "candidate_mean": 0.6836508482535314,
+      "mean_difference": 0.03703892713180638,
+      "seed_scores": {
+        "mean_then_head": [
+          0.6426470588235293,
+          0.6628749790514497,
+          0.634313725490196
+        ],
+        "head_then_mean": [
+          0.6726190476190476,
+          0.6866123642439431,
+          0.6917211328976035
+        ]
+      },
+      "seed_differences": [
+        0.029971988795518212,
+        0.023737385192493465,
+        0.05740740740740746
+      ]
+    }
+  ],
+  "class_results": {
+    "all_development": [
+      {
+        "emotion": "neutral",
+        "recordings": 80,
+        "baseline_f1": 0.5994387260701529,
+        "candidate_f1": 0.6413945101182127,
+        "f1_difference": 0.041955784048059774,
+        "baseline_recall": 0.6291666666666668,
+        "candidate_recall": 0.6375000000000001
+      },
+      {
+        "emotion": "calm",
+        "recordings": 160,
+        "baseline_f1": 0.7892773755156682,
+        "candidate_f1": 0.7807811969613135,
+        "f1_difference": -0.008496178554354694,
+        "baseline_recall": 0.7916666666666666,
+        "candidate_recall": 0.7791666666666668
+      },
+      {
+        "emotion": "happy",
+        "recordings": 160,
+        "baseline_f1": 0.6299230305559419,
+        "candidate_f1": 0.6533070636027275,
+        "f1_difference": 0.0233840330467856,
+        "baseline_recall": 0.61875,
+        "candidate_recall": 0.6416666666666667
+      },
+      {
+        "emotion": "sad",
+        "recordings": 160,
+        "baseline_f1": 0.5756153669197147,
+        "candidate_f1": 0.5969208944669068,
+        "f1_difference": 0.02130552754719206,
+        "baseline_recall": 0.5750000000000001,
+        "candidate_recall": 0.6041666666666666
+      },
+      {
+        "emotion": "angry",
+        "recordings": 160,
+        "baseline_f1": 0.779802563490168,
+        "candidate_f1": 0.7774442186565134,
+        "f1_difference": -0.002358344833654602,
+        "baseline_recall": 0.7708333333333334,
+        "candidate_recall": 0.7645833333333334
+      },
+      {
+        "emotion": "fearful",
+        "recordings": 160,
+        "baseline_f1": 0.7494934004762931,
+        "candidate_f1": 0.7664525195460178,
+        "f1_difference": 0.016959119069724693,
+        "baseline_recall": 0.7666666666666666,
+        "candidate_recall": 0.7833333333333333
+      },
+      {
+        "emotion": "disgust",
+        "recordings": 160,
+        "baseline_f1": 0.8043208191623131,
+        "candidate_f1": 0.8371885990728621,
+        "f1_difference": 0.03286777991054901,
+        "baseline_recall": 0.775,
+        "candidate_recall": 0.8020833333333334
+      },
+      {
+        "emotion": "surprised",
+        "recordings": 160,
+        "baseline_f1": 0.7569566534183397,
+        "candidate_f1": 0.7847631703877832,
+        "f1_difference": 0.027806516969443473,
+        "baseline_recall": 0.7687500000000002,
+        "candidate_recall": 0.8229166666666666
+      }
+    ],
+    "fold_2": [
+      {
+        "emotion": "neutral",
+        "recordings": 16,
+        "baseline_f1": 0.7675653594771242,
+        "candidate_f1": 0.72570345651547,
+        "f1_difference": -0.04186190296165426,
+        "baseline_recall": 0.8125,
+        "candidate_recall": 0.7291666666666666
+      },
+      {
+        "emotion": "calm",
+        "recordings": 32,
+        "baseline_f1": 0.8805147058823529,
+        "candidate_f1": 0.8091591591591593,
+        "f1_difference": -0.07135554672319366,
+        "baseline_recall": 0.9166666666666666,
+        "candidate_recall": 0.8958333333333334
+      },
+      {
+        "emotion": "happy",
+        "recordings": 32,
+        "baseline_f1": 0.6439329354930378,
+        "candidate_f1": 0.6168422772196357,
+        "f1_difference": -0.02709065827340207,
+        "baseline_recall": 0.6875,
+        "candidate_recall": 0.5729166666666666
+      },
+      {
+        "emotion": "sad",
+        "recordings": 32,
+        "baseline_f1": 0.6340155945419103,
+        "candidate_f1": 0.634839271655192,
+        "f1_difference": 0.0008236771132817955,
+        "baseline_recall": 0.5833333333333334,
+        "candidate_recall": 0.5625
+      },
+      {
+        "emotion": "angry",
+        "recordings": 32,
+        "baseline_f1": 0.9025089605734767,
+        "candidate_f1": 0.8899144806072358,
+        "f1_difference": -0.012594479966240968,
+        "baseline_recall": 0.8645833333333334,
+        "candidate_recall": 0.875
+      },
+      {
+        "emotion": "fearful",
+        "recordings": 32,
+        "baseline_f1": 0.9200964872606664,
+        "candidate_f1": 0.9382343863807514,
+        "f1_difference": 0.01813789912008501,
+        "baseline_recall": 0.9583333333333334,
+        "candidate_recall": 0.9479166666666666
+      },
+      {
+        "emotion": "disgust",
+        "recordings": 32,
+        "baseline_f1": 0.9325320512820513,
+        "candidate_f1": 0.9210848888268243,
+        "f1_difference": -0.011447162455227033,
+        "baseline_recall": 0.9375,
+        "candidate_recall": 0.9166666666666666
+      },
+      {
+        "emotion": "surprised",
+        "recordings": 32,
+        "baseline_f1": 0.8221882621715909,
+        "candidate_f1": 0.7885912564873395,
+        "f1_difference": -0.03359700568425139,
+        "baseline_recall": 0.7708333333333334,
+        "candidate_recall": 0.875
+      }
+    ]
+  },
+  "notes": [
+    "Metrics are calculated separately per seed, then averaged.",
+    "Class metrics use pooled out-of-fold predictions within each seed.",
+    "Pooled class metrics differ from averaging five fold metrics.",
+    "Repeated seeds do not constitute independent new recordings.",
+    "No training or test evaluation was performed."
+  ]
+}

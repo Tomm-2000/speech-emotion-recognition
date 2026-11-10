@@ -1,0 +1,12 @@
+{
+  "training_recordings": 1200,
+  "training_speakers": 20,
+  "serialization_check_recordings": 1200,
+  "maximum_probability_differences": {
+    "wav2vec2": 0.0,
+    "wavlm": 0.0
+  },
+  "identical_predictions_after_reload": true,
+  "audio_inference_verified": false,
+  "remaining_check": "Verify live audio features against inference_reference.npz, and pin the verified wav2vec2 checkpoint revision."
+}

@@ -1,0 +1,427 @@
+{
+  "experiment": "nested_logistic_regularization",
+  "feature_set": "wav2vec2_all_layers",
+  "candidate_C_values": [
+    0.001,
+    0.01,
+    0.1,
+    1.0
+  ],
+  "baseline_C": 1.0,
+  "max_iter": 2000,
+  "selection_metric": "mean_inner_fold_macro_f1",
+  "tie_rule": "prefer_smaller_C",
+  "inner_protocol": "Four speaker-disjoint inner folds within each outer training set. Scaler fitted separately in each inner fit.",
+  "folds": [
+    {
+      "fold": "fold_1",
+      "evaluation_speakers": [
+        "03",
+        "09",
+        "12",
+        "18"
+      ],
+      "selected_C": 0.01,
+      "inner_search": [
+        {
+          "C": 0.001,
+          "inner_folds": [
+            "fold_2",
+            "fold_3",
+            "fold_4",
+            "fold_5"
+          ],
+          "inner_scores": [
+            0.6751529256989233,
+            0.6097604268432048,
+            0.5966262275193284,
+            0.6117011168831799
+          ],
+          "inner_mean": 0.6233101742361591
+        },
+        {
+          "C": 0.01,
+          "inner_folds": [
+            "fold_2",
+            "fold_3",
+            "fold_4",
+            "fold_5"
+          ],
+          "inner_scores": [
+            0.7532194864139423,
+            0.6900083049600596,
+            0.5894559026705823,
+            0.7278837717342068
+          ],
+          "inner_mean": 0.6901418664446977
+        },
+        {
+          "C": 0.1,
+          "inner_folds": [
+            "fold_2",
+            "fold_3",
+            "fold_4",
+            "fold_5"
+          ],
+          "inner_scores": [
+            0.7651632389208186,
+            0.6828388229961472,
+            0.5695762007181164,
+            0.7268778354194925
+          ],
+          "inner_mean": 0.6861140245136437
+        },
+        {
+          "C": 1.0,
+          "inner_folds": [
+            "fold_2",
+            "fold_3",
+            "fold_4",
+            "fold_5"
+          ],
+          "inner_scores": [
+            0.7618681115953811,
+            0.6775088168721914,
+            0.576805966600496,
+            0.7121953394016989
+          ],
+          "inner_mean": 0.6820945586174418
+        }
+      ],
+      "baseline_train_macro_f1": 1.0,
+      "selected_train_macro_f1": 0.9858473842973283,
+      "baseline_evaluation_macro_f1": 0.6802445632375582,
+      "selected_evaluation_macro_f1": 0.7180065229160018,
+      "difference": 0.037761959678443535
+    },
+    {
+      "fold": "fold_2",
+      "evaluation_speakers": [
+        "01",
+        "02",
+        "04",
+        "05"
+      ],
+      "selected_C": 0.01,
+      "inner_search": [
+        {
+          "C": 0.001,
+          "inner_folds": [
+            "fold_1",
+            "fold_3",
+            "fold_4",
+            "fold_5"
+          ],
+          "inner_scores": [
+            0.5773823967073517,
+            0.6235268970363073,
+            0.5642091415607959,
+            0.567768094006702
+          ],
+          "inner_mean": 0.5832216323277892
+        },
+        {
+          "C": 0.01,
+          "inner_folds": [
+            "fold_1",
+            "fold_3",
+            "fold_4",
+            "fold_5"
+          ],
+          "inner_scores": [
+            0.6597802623004235,
+            0.724953325076046,
+            0.5317991073657636,
+            0.6611649419514886
+          ],
+          "inner_mean": 0.6444244091734305
+        },
+        {
+          "C": 0.1,
+          "inner_folds": [
+            "fold_1",
+            "fold_3",
+            "fold_4",
+            "fold_5"
+          ],
+          "inner_scores": [
+            0.6295684000541764,
+            0.7000322973681398,
+            0.5203944570904626,
+            0.6896421199987559
+          ],
+          "inner_mean": 0.6349093186278836
+        },
+        {
+          "C": 1.0,
+          "inner_folds": [
+            "fold_1",
+            "fold_3",
+            "fold_4",
+            "fold_5"
+          ],
+          "inner_scores": [
+            0.6337109615690288,
+            0.6992717192963899,
+            0.5036405618582505,
+            0.6880119354954515
+          ],
+          "inner_mean": 0.6311587945547801
+        }
+      ],
+      "baseline_train_macro_f1": 1.0,
+      "selected_train_macro_f1": 0.985861745827508,
+      "baseline_evaluation_macro_f1": 0.8095682185040918,
+      "selected_evaluation_macro_f1": 0.8179851959723283,
+      "difference": 0.008416977468236553
+    },
+    {
+      "fold": "fold_3",
+      "evaluation_speakers": [
+        "07",
+        "08",
+        "10",
+        "11"
+      ],
+      "selected_C": 0.1,
+      "inner_search": [
+        {
+          "C": 0.001,
+          "inner_folds": [
+            "fold_1",
+            "fold_2",
+            "fold_4",
+            "fold_5"
+          ],
+          "inner_scores": [
+            0.5309246455249925,
+            0.7145552233090824,
+            0.5566569909446029,
+            0.5882885416348262
+          ],
+          "inner_mean": 0.597606350353376
+        },
+        {
+          "C": 0.01,
+          "inner_folds": [
+            "fold_1",
+            "fold_2",
+            "fold_4",
+            "fold_5"
+          ],
+          "inner_scores": [
+            0.69310094232175,
+            0.788784291662713,
+            0.5667600391776846,
+            0.6908685562530883
+          ],
+          "inner_mean": 0.6848784573538089
+        },
+        {
+          "C": 0.1,
+          "inner_folds": [
+            "fold_1",
+            "fold_2",
+            "fold_4",
+            "fold_5"
+          ],
+          "inner_scores": [
+            0.6943729291589398,
+            0.795348770933851,
+            0.5753066803351023,
+            0.7237628683586095
+          ],
+          "inner_mean": 0.6971978121966256
+        },
+        {
+          "C": 1.0,
+          "inner_folds": [
+            "fold_1",
+            "fold_2",
+            "fold_4",
+            "fold_5"
+          ],
+          "inner_scores": [
+            0.6970605939827588,
+            0.7962763205361889,
+            0.5631641452064999,
+            0.7239356143138538
+          ],
+          "inner_mean": 0.6951091685098254
+        }
+      ],
+      "baseline_train_macro_f1": 1.0,
+      "selected_train_macro_f1": 1.0,
+      "baseline_evaluation_macro_f1": 0.7525051836315431,
+      "selected_evaluation_macro_f1": 0.7445598133215883,
+      "difference": -0.007945370309954791
+    },
+    {
+      "fold": "fold_4",
+      "evaluation_speakers": [
+        "13",
+        "14",
+        "16",
+        "17"
+      ],
+      "selected_C": 0.01,
+      "inner_search": [
+        {
+          "C": 0.001,
+          "inner_folds": [
+            "fold_1",
+            "fold_2",
+            "fold_3",
+            "fold_5"
+          ],
+          "inner_scores": [
+            0.5810863641798679,
+            0.7292736669072868,
+            0.6569079872092205,
+            0.6299368610438526
+          ],
+          "inner_mean": 0.649301219835057
+        },
+        {
+          "C": 0.01,
+          "inner_folds": [
+            "fold_1",
+            "fold_2",
+            "fold_3",
+            "fold_5"
+          ],
+          "inner_scores": [
+            0.6908536182472892,
+            0.7671978195415696,
+            0.6978275996616341,
+            0.7231736704758279
+          ],
+          "inner_mean": 0.7197631769815802
+        },
+        {
+          "C": 0.1,
+          "inner_folds": [
+            "fold_1",
+            "fold_2",
+            "fold_3",
+            "fold_5"
+          ],
+          "inner_scores": [
+            0.6869561549231213,
+            0.7447797950150463,
+            0.6969122993451309,
+            0.7146543783540704
+          ],
+          "inner_mean": 0.7108256569093423
+        },
+        {
+          "C": 1.0,
+          "inner_folds": [
+            "fold_1",
+            "fold_2",
+            "fold_3",
+            "fold_5"
+          ],
+          "inner_scores": [
+            0.6784719225805299,
+            0.7516570827406894,
+            0.6965918680771379,
+            0.7078832610199334
+          ],
+          "inner_mean": 0.7086510336045727
+        }
+      ],
+      "baseline_train_macro_f1": 1.0,
+      "selected_train_macro_f1": 0.9839089770791274,
+      "baseline_evaluation_macro_f1": 0.6038016490735423,
+      "selected_evaluation_macro_f1": 0.5952295691638756,
+      "difference": -0.008572079909666686
+    },
+    {
+      "fold": "fold_5",
+      "evaluation_speakers": [
+        "19",
+        "20",
+        "22",
+        "23"
+      ],
+      "selected_C": 0.01,
+      "inner_search": [
+        {
+          "C": 0.001,
+          "inner_folds": [
+            "fold_1",
+            "fold_2",
+            "fold_3",
+            "fold_4"
+          ],
+          "inner_scores": [
+            0.5929486852725032,
+            0.7329345455128142,
+            0.6274811535750928,
+            0.5592834761520229
+          ],
+          "inner_mean": 0.6281619651281083
+        },
+        {
+          "C": 0.01,
+          "inner_folds": [
+            "fold_1",
+            "fold_2",
+            "fold_3",
+            "fold_4"
+          ],
+          "inner_scores": [
+            0.696920712019047,
+            0.8062052310098258,
+            0.720392495291595,
+            0.6053526608960107
+          ],
+          "inner_mean": 0.7072177748041196
+        },
+        {
+          "C": 0.1,
+          "inner_folds": [
+            "fold_1",
+            "fold_2",
+            "fold_3",
+            "fold_4"
+          ],
+          "inner_scores": [
+            0.6951920199309884,
+            0.8107443729986561,
+            0.7082538855639118,
+            0.6078018739920272
+          ],
+          "inner_mean": 0.705498038121396
+        },
+        {
+          "C": 1.0,
+          "inner_folds": [
+            "fold_1",
+            "fold_2",
+            "fold_3",
+            "fold_4"
+          ],
+          "inner_scores": [
+            0.6866136166360253,
+            0.804658589173634,
+            0.7197889840463523,
+            0.5891300163839761
+          ],
+          "inner_mean": 0.7000478015599969
+        }
+      ],
+      "baseline_train_macro_f1": 1.0,
+      "selected_train_macro_f1": 0.9848750230742704,
+      "baseline_evaluation_macro_f1": 0.7403416292382383,
+      "selected_evaluation_macro_f1": 0.7329139545303394,
+      "difference": -0.007427674707898957
+    }
+  ],
+  "baseline_mean": 0.7172922487369947,
+  "selected_mean": 0.7217390111808266,
+  "mean_paired_difference": 0.004446762443831931,
+  "elapsed_seconds": 28.644926700013457,
+  "note": "Development experiment. Test recordings were not used. No final classifier was saved or replaced."
+}

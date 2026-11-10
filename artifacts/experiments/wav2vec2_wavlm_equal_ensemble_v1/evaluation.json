@@ -1,0 +1,228 @@
+{
+  "results": {
+    "wav2vec2": {
+      "fold_scores": {
+        "fold_1": 0.6802445632375582,
+        "fold_2": 0.8095682185040918,
+        "fold_3": 0.7525051836315431,
+        "fold_4": 0.6038016490735423,
+        "fold_5": 0.7403416292382383
+      },
+      "mean_macro_f1": 0.7172922487369947,
+      "std_across_folds": 0.07005530177605719,
+      "pooled_oof_report": {
+        "01": {
+          "precision": 0.5909090909090909,
+          "recall": 0.65,
+          "f1-score": 0.6190476190476191,
+          "support": 80.0
+        },
+        "02": {
+          "precision": 0.7814569536423841,
+          "recall": 0.7375,
+          "f1-score": 0.7588424437299035,
+          "support": 160.0
+        },
+        "03": {
+          "precision": 0.6623376623376623,
+          "recall": 0.6375,
+          "f1-score": 0.6496815286624203,
+          "support": 160.0
+        },
+        "04": {
+          "precision": 0.5689655172413793,
+          "recall": 0.61875,
+          "f1-score": 0.592814371257485,
+          "support": 160.0
+        },
+        "05": {
+          "precision": 0.7707006369426752,
+          "recall": 0.75625,
+          "f1-score": 0.7634069400630915,
+          "support": 160.0
+        },
+        "06": {
+          "precision": 0.7770700636942676,
+          "recall": 0.7625,
+          "f1-score": 0.7697160883280757,
+          "support": 160.0
+        },
+        "07": {
+          "precision": 0.8503401360544217,
+          "recall": 0.78125,
+          "f1-score": 0.8143322475570033,
+          "support": 160.0
+        },
+        "08": {
+          "precision": 0.7441860465116279,
+          "recall": 0.8,
+          "f1-score": 0.7710843373493976,
+          "support": 160.0
+        },
+        "accuracy": 0.7225,
+        "macro avg": {
+          "precision": 0.7182457634166887,
+          "recall": 0.71796875,
+          "f1-score": 0.7173656969993746,
+          "support": 1200.0
+        },
+        "weighted avg": {
+          "precision": 0.7267348749171951,
+          "recall": 0.7225,
+          "f1-score": 0.7239202355294916,
+          "support": 1200.0
+        }
+      }
+    },
+    "wavlm": {
+      "fold_scores": {
+        "fold_1": 0.7802912386121341,
+        "fold_2": 0.7887780044854171,
+        "fold_3": 0.7482925621126053,
+        "fold_4": 0.6285450865558073,
+        "fold_5": 0.6900357007281026
+      },
+      "mean_macro_f1": 0.7271885184988133,
+      "std_across_folds": 0.060281676914596,
+      "pooled_oof_report": {
+        "01": {
+          "precision": 0.5934065934065934,
+          "recall": 0.675,
+          "f1-score": 0.631578947368421,
+          "support": 80.0
+        },
+        "02": {
+          "precision": 0.7310344827586207,
+          "recall": 0.6625,
+          "f1-score": 0.6950819672131148,
+          "support": 160.0
+        },
+        "03": {
+          "precision": 0.6878980891719745,
+          "recall": 0.675,
+          "f1-score": 0.6813880126182965,
+          "support": 160.0
+        },
+        "04": {
+          "precision": 0.5355191256830601,
+          "recall": 0.6125,
+          "f1-score": 0.5714285714285714,
+          "support": 160.0
+        },
+        "05": {
+          "precision": 0.8590604026845637,
+          "recall": 0.8,
+          "f1-score": 0.8284789644012945,
+          "support": 160.0
+        },
+        "06": {
+          "precision": 0.7806451612903226,
+          "recall": 0.75625,
+          "f1-score": 0.7682539682539683,
+          "support": 160.0
+        },
+        "07": {
+          "precision": 0.868421052631579,
+          "recall": 0.825,
+          "f1-score": 0.8461538461538461,
+          "support": 160.0
+        },
+        "08": {
+          "precision": 0.8035714285714286,
+          "recall": 0.84375,
+          "f1-score": 0.823170731707317,
+          "support": 160.0
+        },
+        "accuracy": 0.735,
+        "macro avg": {
+          "precision": 0.7324445420247678,
+          "recall": 0.73125,
+          "f1-score": 0.7306918761431037,
+          "support": 1200.0
+        },
+        "weighted avg": {
+          "precision": 0.7417137385993129,
+          "recall": 0.735,
+          "f1-score": 0.7372994047280825,
+          "support": 1200.0
+        }
+      }
+    },
+    "equal_ensemble": {
+      "fold_scores": {
+        "fold_1": 0.7764223321319714,
+        "fold_2": 0.8148292458388455,
+        "fold_3": 0.7921740143707054,
+        "fold_4": 0.6582834662930009,
+        "fold_5": 0.7426593528551191
+      },
+      "mean_macro_f1": 0.7568736822979285,
+      "std_across_folds": 0.05460620542307369,
+      "pooled_oof_report": {
+        "01": {
+          "precision": 0.6170212765957447,
+          "recall": 0.725,
+          "f1-score": 0.6666666666666666,
+          "support": 80.0
+        },
+        "02": {
+          "precision": 0.8040540540540541,
+          "recall": 0.74375,
+          "f1-score": 0.7727272727272727,
+          "support": 160.0
+        },
+        "03": {
+          "precision": 0.726027397260274,
+          "recall": 0.6625,
+          "f1-score": 0.6928104575163399,
+          "support": 160.0
+        },
+        "04": {
+          "precision": 0.5921787709497207,
+          "recall": 0.6625,
+          "f1-score": 0.6253687315634219,
+          "support": 160.0
+        },
+        "05": {
+          "precision": 0.8503401360544217,
+          "recall": 0.78125,
+          "f1-score": 0.8143322475570033,
+          "support": 160.0
+        },
+        "06": {
+          "precision": 0.8023952095808383,
+          "recall": 0.8375,
+          "f1-score": 0.8195718654434251,
+          "support": 160.0
+        },
+        "07": {
+          "precision": 0.8933333333333333,
+          "recall": 0.8375,
+          "f1-score": 0.864516129032258,
+          "support": 160.0
+        },
+        "08": {
+          "precision": 0.7869822485207101,
+          "recall": 0.83125,
+          "f1-score": 0.8085106382978723,
+          "support": 160.0
+        },
+        "accuracy": 0.7625,
+        "macro avg": {
+          "precision": 0.7590415532936371,
+          "recall": 0.7601562500000001,
+          "f1-score": 0.7580630011005325,
+          "support": 1200.0
+        },
+        "weighted avg": {
+          "precision": 0.7685095717401632,
+          "recall": 0.7625,
+          "f1-score": 0.7641560900627902,
+          "support": 1200.0
+        }
+      }
+    }
+  },
+  "elapsed_seconds": 1.0462116999988211,
+  "note": "Fixed equal-weight ensemble on development speaker folds. No weight tuning or test evaluation. Fold standard deviation is not a confidence interval."
+}

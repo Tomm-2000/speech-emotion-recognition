@@ -1,0 +1,81 @@
+{
+  "fold_scores": {
+    "fold_1": 0.7802912386121341,
+    "fold_2": 0.7887780044854171,
+    "fold_3": 0.7482925621126053,
+    "fold_4": 0.6285450865558073,
+    "fold_5": 0.6900357007281026
+  },
+  "mean_macro_f1": 0.7271885184988133,
+  "std_across_folds": 0.060281676914596,
+  "pooled_oof_report": {
+    "01": {
+      "precision": 0.5934065934065934,
+      "recall": 0.675,
+      "f1-score": 0.631578947368421,
+      "support": 80.0
+    },
+    "02": {
+      "precision": 0.7310344827586207,
+      "recall": 0.6625,
+      "f1-score": 0.6950819672131148,
+      "support": 160.0
+    },
+    "03": {
+      "precision": 0.6878980891719745,
+      "recall": 0.675,
+      "f1-score": 0.6813880126182965,
+      "support": 160.0
+    },
+    "04": {
+      "precision": 0.5355191256830601,
+      "recall": 0.6125,
+      "f1-score": 0.5714285714285714,
+      "support": 160.0
+    },
+    "05": {
+      "precision": 0.8590604026845637,
+      "recall": 0.8,
+      "f1-score": 0.8284789644012945,
+      "support": 160.0
+    },
+    "06": {
+      "precision": 0.7806451612903226,
+      "recall": 0.75625,
+      "f1-score": 0.7682539682539683,
+      "support": 160.0
+    },
+    "07": {
+      "precision": 0.868421052631579,
+      "recall": 0.825,
+      "f1-score": 0.8461538461538461,
+      "support": 160.0
+    },
+    "08": {
+      "precision": 0.8035714285714286,
+      "recall": 0.84375,
+      "f1-score": 0.823170731707317,
+      "support": 160.0
+    },
+    "accuracy": 0.735,
+    "macro avg": {
+      "precision": 0.7324445420247678,
+      "recall": 0.73125,
+      "f1-score": 0.7306918761431037,
+      "support": 1200.0
+    },
+    "weighted avg": {
+      "precision": 0.7417137385993129,
+      "recall": 0.735,
+      "f1-score": 0.7372994047280825,
+      "support": 1200.0
+    }
+  },
+  "classifier": {
+    "name": "logistic",
+    "C": 1.0,
+    "max_iter": 2000
+  },
+  "revision": "4c66d4806a428f2e922ccfa1a962776e232d487b",
+  "note": "Development speaker-disjoint cross-validation. Fixed classifier settings. No test evaluation. Fold standard deviation is not a confidence interval."
+}

@@ -1,0 +1,47 @@
+{
+  "recordings": 20,
+  "paths": [
+    "data/raw/Actor_01/03-01-01-01-01-01-01.wav",
+    "data/raw/Actor_02/03-01-01-01-01-01-02.wav",
+    "data/raw/Actor_03/03-01-01-01-01-01-03.wav",
+    "data/raw/Actor_04/03-01-01-01-01-01-04.wav",
+    "data/raw/Actor_05/03-01-01-01-01-01-05.wav",
+    "data/raw/Actor_07/03-01-01-01-01-01-07.wav",
+    "data/raw/Actor_08/03-01-01-01-01-01-08.wav",
+    "data/raw/Actor_09/03-01-01-01-01-01-09.wav",
+    "data/raw/Actor_10/03-01-01-01-01-01-10.wav",
+    "data/raw/Actor_11/03-01-01-01-01-01-11.wav",
+    "data/raw/Actor_12/03-01-01-01-01-01-12.wav",
+    "data/raw/Actor_13/03-01-01-01-01-01-13.wav",
+    "data/raw/Actor_14/03-01-01-01-01-01-14.wav",
+    "data/raw/Actor_16/03-01-01-01-01-01-16.wav",
+    "data/raw/Actor_17/03-01-01-01-01-01-17.wav",
+    "data/raw/Actor_18/03-01-01-01-01-01-18.wav",
+    "data/raw/Actor_19/03-01-01-01-01-01-19.wav",
+    "data/raw/Actor_20/03-01-01-01-01-01-20.wav",
+    "data/raw/Actor_22/03-01-01-01-01-01-22.wav",
+    "data/raw/Actor_23/03-01-01-01-01-01-23.wav"
+  ],
+  "encoders": {
+    "wav2vec2": {
+      "model_id": "facebook/wav2vec2-base",
+      "verified_revision": "0b5b8e868dd84f03fd87d01f9c4ff0f080fecfe8",
+      "do_normalize": true,
+      "maximum_feature_difference": 5.364418029785156e-07,
+      "loading_policy": "Pinned local pytorch_model.bin"
+    },
+    "wavlm": {
+      "model_id": "microsoft/wavlm-base-plus",
+      "verified_revision": "4c66d4806a428f2e922ccfa1a962776e232d487b",
+      "do_normalize": false,
+      "maximum_feature_difference": 0.0,
+      "loading_policy": "Pinned local checkpoint"
+    }
+  },
+  "feature_rtol": 0.0001,
+  "feature_atol": 1e-05,
+  "probability_atol": 0.0001,
+  "maximum_probability_difference": 1.1920928955078125e-07,
+  "identical_predicted_labels": true,
+  "note": "Audio-to-prediction consistency check on development recordings. Not an accuracy evaluation or proof of historical checkpoint identity."
+}

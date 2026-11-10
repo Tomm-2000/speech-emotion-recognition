@@ -1,0 +1,155 @@
+{
+  "experiment": "processing_before_vs_after_time_mean",
+  "complete": true,
+  "config": {
+    "seed": 7,
+    "max_epochs": 100,
+    "patience": 12,
+    "batch_size": 32,
+    "hidden_units": 128,
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0,
+    "device": "cpu",
+    "torch_version": "2.15.0+cpu",
+    "normalization": "shared_training_utterance_mean_scaler",
+    "inner_split": "next_fold_cyclically",
+    "feature_directory": "wav2vec2_frames_dev",
+    "folds": {
+      "fold_1": [
+        "03",
+        "09",
+        "12",
+        "18"
+      ],
+      "fold_2": [
+        "01",
+        "02",
+        "04",
+        "05"
+      ],
+      "fold_3": [
+        "07",
+        "08",
+        "10",
+        "11"
+      ],
+      "fold_4": [
+        "13",
+        "14",
+        "16",
+        "17"
+      ],
+      "fold_5": [
+        "19",
+        "20",
+        "22",
+        "23"
+      ]
+    }
+  },
+  "records": [
+    {
+      "fold": "fold_1",
+      "mode": "mean_then_head",
+      "inner_validation": "fold_2",
+      "selected_epochs": 14,
+      "inner_macro_f1": 0.7946850031160675,
+      "training_macro_f1": 1.0,
+      "evaluation_macro_f1": 0.6736580030959707,
+      "elapsed_seconds": 25.522226000000956
+    },
+    {
+      "fold": "fold_1",
+      "mode": "head_then_mean",
+      "inner_validation": "fold_2",
+      "selected_epochs": 14,
+      "inner_macro_f1": 0.8081696825460383,
+      "training_macro_f1": 1.0,
+      "evaluation_macro_f1": 0.7211576625980062,
+      "elapsed_seconds": 35.59443659998942
+    },
+    {
+      "fold": "fold_2",
+      "mode": "mean_then_head",
+      "inner_validation": "fold_3",
+      "selected_epochs": 9,
+      "inner_macro_f1": 0.7139099709817882,
+      "training_macro_f1": 0.9990234225986114,
+      "evaluation_macro_f1": 0.8228663902699638,
+      "elapsed_seconds": 17.275316000013845
+    },
+    {
+      "fold": "fold_2",
+      "mode": "head_then_mean",
+      "inner_validation": "fold_3",
+      "selected_epochs": 11,
+      "inner_macro_f1": 0.7279421517627551,
+      "training_macro_f1": 0.98872547374114,
+      "evaluation_macro_f1": 0.8011942896492981,
+      "elapsed_seconds": 30.413916500023333
+    },
+    {
+      "fold": "fold_3",
+      "mode": "mean_then_head",
+      "inner_validation": "fold_4",
+      "selected_epochs": 22,
+      "inner_macro_f1": 0.5461596855661709,
+      "training_macro_f1": 1.0,
+      "evaluation_macro_f1": 0.7314144364083133,
+      "elapsed_seconds": 31.539034300018102
+    },
+    {
+      "fold": "fold_3",
+      "mode": "head_then_mean",
+      "inner_validation": "fold_4",
+      "selected_epochs": 8,
+      "inner_macro_f1": 0.6227522037579216,
+      "training_macro_f1": 0.9878122600431872,
+      "evaluation_macro_f1": 0.7386177447317657,
+      "elapsed_seconds": 24.749763200001325
+    },
+    {
+      "fold": "fold_4",
+      "mode": "mean_then_head",
+      "inner_validation": "fold_5",
+      "selected_epochs": 13,
+      "inner_macro_f1": 0.7199742261760242,
+      "training_macro_f1": 1.0,
+      "evaluation_macro_f1": 0.589603998854209,
+      "elapsed_seconds": 21.39937299999292
+    },
+    {
+      "fold": "fold_4",
+      "mode": "head_then_mean",
+      "inner_validation": "fold_5",
+      "selected_epochs": 11,
+      "inner_macro_f1": 0.7568056195705701,
+      "training_macro_f1": 1.0,
+      "evaluation_macro_f1": 0.6060672625433343,
+      "elapsed_seconds": 31.46583110000938
+    },
+    {
+      "fold": "fold_5",
+      "mode": "mean_then_head",
+      "inner_validation": "fold_1",
+      "selected_epochs": 10,
+      "inner_macro_f1": 0.6839768865966529,
+      "training_macro_f1": 1.0,
+      "evaluation_macro_f1": 0.728416563719953,
+      "elapsed_seconds": 18.159593199990923
+    },
+    {
+      "fold": "fold_5",
+      "mode": "head_then_mean",
+      "inner_validation": "fold_1",
+      "selected_epochs": 14,
+      "inner_macro_f1": 0.7196398630856035,
+      "training_macro_f1": 1.0,
+      "evaluation_macro_f1": 0.7574226888121895,
+      "elapsed_seconds": 34.13509080000222
+    }
+  ],
+  "elapsed_seconds": 270.35123820000445,
+  "note": "Additional prespecified seed on the same development folds; not new independent test data."
+}

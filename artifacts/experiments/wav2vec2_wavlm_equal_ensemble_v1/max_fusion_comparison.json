@@ -1,0 +1,66 @@
+{
+  "results": {
+    "wav2vec2": {
+      "fold_scores": {
+        "fold_1": 0.6802445632375582,
+        "fold_2": 0.8095682185040918,
+        "fold_3": 0.7525051836315431,
+        "fold_4": 0.6038016490735423,
+        "fold_5": 0.7403416292382383
+      },
+      "mean_macro_f1": 0.7172922487369947,
+      "std_across_folds": 0.07005530177605719,
+      "pooled_accuracy": 0.7225
+    },
+    "wavlm": {
+      "fold_scores": {
+        "fold_1": 0.7802912386121341,
+        "fold_2": 0.7887780044854171,
+        "fold_3": 0.7482925621126053,
+        "fold_4": 0.6285450865558073,
+        "fold_5": 0.6900357007281026
+      },
+      "mean_macro_f1": 0.7271885184988133,
+      "std_across_folds": 0.060281676914596,
+      "pooled_accuracy": 0.735
+    },
+    "mean_fusion": {
+      "fold_scores": {
+        "fold_1": 0.7764223321319714,
+        "fold_2": 0.8148292458388455,
+        "fold_3": 0.7921740143707054,
+        "fold_4": 0.6582834662930009,
+        "fold_5": 0.7426593528551191
+      },
+      "mean_macro_f1": 0.7568736822979285,
+      "std_across_folds": 0.05460620542307369,
+      "pooled_accuracy": 0.7625
+    },
+    "max_fusion": {
+      "fold_scores": {
+        "fold_1": 0.7712598156821415,
+        "fold_2": 0.8104138980478711,
+        "fold_3": 0.7844749516743033,
+        "fold_4": 0.6484439781566188,
+        "fold_5": 0.7295751224572626
+      },
+      "mean_macro_f1": 0.7488335532036394,
+      "std_across_folds": 0.05659388542549129,
+      "pooled_accuracy": 0.755
+    }
+  },
+  "changes": {
+    "max_corrected_mean_errors": 4,
+    "max_broke_mean_correct_predictions": 13,
+    "changed_predictions": 20
+  },
+  "max_minus_mean_macro_f1": -0.008040129094289084,
+  "exact_max_ties": 0,
+  "mean_consistency": {
+    "maximum_float64_difference": 2.9802322387695312e-08,
+    "maximum_float32_difference": 0.0,
+    "absolute_tolerance": 2.384185791015625e-07
+  },
+  "tie_policy": "First label in fixed ascending label order.",
+  "note": "Development comparison using stored OOF probabilities. The original stored mean is used unchanged. Max scores are not calibrated probabilities. Original results and models were not modified."
+}
