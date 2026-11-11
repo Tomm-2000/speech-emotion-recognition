@@ -4,9 +4,9 @@ from pathlib import Path
 import librosa
 import numpy as np
 
-from extract_features import SAMPLE_RATE
+from .extract_features import SAMPLE_RATE
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[2]
 FRAME_LENGTH = 1024
 HOP_LENGTH = 256
 

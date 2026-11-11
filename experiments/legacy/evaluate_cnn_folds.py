@@ -7,8 +7,8 @@ from sklearn.metrics import f1_score
 from torch import nn
 from torch.utils.data import DataLoader, TensorDataset
 
-from cnn_model import EmotionCNN
-from train_cnn import ROOT, load_split, normalize, valid_frames
+from .cnn_model import EmotionCNN
+from .train_cnn import ROOT, load_split, normalize, valid_frames
 
 DATA = ROOT / "data"
 EPOCHS = 25

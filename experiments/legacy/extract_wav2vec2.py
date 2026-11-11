@@ -8,7 +8,7 @@ import numpy as np
 import torch
 from transformers import AutoFeatureExtractor, AutoModel
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[2]
 MODEL_ID = "facebook/wav2vec2-base"
 SAMPLE_RATE = 16_000
 

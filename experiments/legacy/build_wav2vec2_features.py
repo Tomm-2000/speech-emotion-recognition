@@ -7,7 +7,7 @@ import librosa
 import numpy as np
 import torch
 
-from extract_wav2vec2 import (
+from .extract_wav2vec2 import (
     MODEL_ID,
     ROOT,
     SAMPLE_RATE,

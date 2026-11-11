@@ -8,9 +8,9 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
 
-from extract_wav2vec2 import MODEL_ID, SAMPLE_RATE
+from .extract_wav2vec2 import MODEL_ID, SAMPLE_RATE
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[2]
 
 CONFIGS = {
     "last": {

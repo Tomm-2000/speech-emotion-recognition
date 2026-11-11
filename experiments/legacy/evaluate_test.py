@@ -11,14 +11,14 @@ from sklearn.metrics import (
     f1_score,
 )
 
-from extract_wav2vec2 import (
+from .extract_wav2vec2 import (
     MODEL_ID,
     SAMPLE_RATE,
     extract_embedding,
     load_encoder,
 )
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[2]
 DATA = ROOT / "data"
 ARTIFACTS = ROOT / "artifacts"
 

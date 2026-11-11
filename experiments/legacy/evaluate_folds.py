@@ -19,7 +19,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVC
 
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[2]
 DATA = ROOT / "data"
 
 LABELS = [f"{number:02d}" for number in range(1, 9)]

@@ -8,19 +8,15 @@ import warnings
 from pathlib import Path
 from time import perf_counter
 
-import librosa
 import numpy as np
-import torch
 import yaml
-from huggingface_hub import HfApi
 from sklearn.exceptions import ConvergenceWarning
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report, f1_score
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
-from transformers import AutoFeatureExtractor, AutoModel
 
-ROOT = Path(__file__).resolve().parent
+from .paths import ROOT
 LABELS = np.array([f"{number:02d}" for number in range(1, 9)])
 PACKAGES = (
     "numpy", "torch", "transformers", "huggingface-hub",
@@ -101,7 +97,7 @@ def load_data(config):
 
 def core_config(config):
     # The ensemble section does not alter an existing encoder experiment.
-    return {key: value for key, value in config.items() if key != "ensemble"}
+    return {key: value for key, value in config.items() if key not in {"ensemble", "regularization", "fitting"}}
 
 
 def verify_source_lock(directory, config, manifest_path, folds_path):
@@ -136,6 +132,7 @@ def prepare_encoder_run(config, manifest_path, folds_path):
                 "with any new evaluation."
             )
     else:
+        from huggingface_hub import HfApi
         revision = HfApi().model_info(
             config["encoder"]["model_id"],
             revision=config["encoder"]["revision"],
@@ -163,6 +160,7 @@ def prepare_encoder_run(config, manifest_path, folds_path):
 
 
 def load_encoder(config, revision):
+    from transformers import AutoFeatureExtractor, AutoModel
     settings = config["encoder"]
     processor = AutoFeatureExtractor.from_pretrained(
         settings["model_id"], revision=revision,
@@ -191,8 +189,15 @@ def load_encoder(config, revision):
     return processor, model
 
 
-@torch.inference_mode()
 def extract_one(row, config, processor, model):
+    import torch
+    with torch.inference_mode():
+        return _extract_one(row, config, processor, model)
+
+
+def _extract_one(row, config, processor, model):
+    import librosa
+    import torch
     settings = config["encoder"]
     audio, sample_rate = librosa.load(
         ROOT / row["path"], sr=settings["sample_rate"], mono=True
@@ -564,48 +569,3 @@ def ensemble(rows, folds, config, manifest_path, folds_path):
         ),
     })
     print(f"Saved: {output.relative_to(ROOT)}")
-
-
-def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--config", default="config.yaml")
-    parser.add_argument(
-        "--stage",
-        choices=["smoke", "extract", "evaluate", "ensemble"],
-        required=True,
-    )
-    args = parser.parse_args()
-
-    with (ROOT / args.config).open(encoding="utf-8-sig") as file:
-        config = yaml.safe_load(file)
-
-    if config["encoder"]["pooling"] != "all_transformer_mean":
-        raise ValueError("Only all_transformer_mean is implemented.")
-    if config["classifier"]["name"] != "logistic":
-        raise ValueError("Only logistic is implemented.")
-    if config["runtime"]["smoke_recordings"] < 1:
-        raise ValueError("smoke_recordings must be positive.")
-
-    seed = config["runtime"]["seed"]
-    random.seed(seed)
-    np.random.seed(seed)
-    torch.manual_seed(seed)
-    torch.set_num_threads(config["runtime"]["cpu_threads"])
-
-    rows, folds, manifest_path, folds_path = load_data(config)
-
-    if args.stage == "ensemble":
-        ensemble(rows, folds, config, manifest_path, folds_path)
-        return
-
-    output, revision = prepare_encoder_run(
-        config, manifest_path, folds_path
-    )
-    if args.stage == "evaluate":
-        evaluate(rows, folds, config, output, revision)
-    else:
-        extract_stage(args.stage, rows, config, output, revision)
-
-
-if __name__ == "__main__":
-    main()

@@ -11,7 +11,7 @@ from sklearn.metrics import (
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
 
-root = Path(__file__).resolve().parent
+root = Path(__file__).resolve().parents[2]
 labels = ["01", "02", "03", "04", "05", "06", "07", "08"]
 emotion_names = [
     "neutral",

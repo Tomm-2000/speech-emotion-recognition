@@ -163,96 +163,107 @@ These results do not belong to the current ensemble.
 The original test set was inspected during earlier project stages.
 It is not an untouched final benchmark for subsequent development.
 
-## Environment
+## Project layout
 
-Development used Windows PowerShell, Python 3.12.10, and CPU execution.
+- `run_experiment.py`: one entry point for the current ensemble workflow.
+- `predict.py`: single-file inference, compatible with the existing verified bundle.
+- `ser/experiments.py`: data validation, extraction, folds, evaluation, and equal fusion.
+- `ser/regularization.py`: nested speaker-based regularization experiment.
+- `ser/bundle.py`: pinned reference extraction, final fitting, and audio verification.
+- `ser/inference.py`: shared inference implementation.
+- `ser/mfcc.py`: shared historical MFCC implementation.
+- `experiments/legacy/`: earlier MFCC, CNN, pooling, and layer-mixing experiments.
+- `configs/reproduce.yaml`: pinned encoders and fresh output paths for new runs.
+- `config.yaml`: original configuration, retained for existing local feature caches.
+- `artifacts/`: original experiment evidence, preserved at its existing paths.
+- `tests/`: lightweight checks that require no audio or encoder downloads.
+- `docs/`: setup, migration, refactor scope, and verification details.
 
-`requirements-lock.txt` contains a previously captured environment
-snapshot. It still requires reconciliation with the final environment
-and verification in a clean installation.
+The original results above were produced before the refactor. They are not
+claimed as results of a new end-to-end training run.
 
-## Repository organization
+## Setup and reproduction
 
-- `config.yaml`: experiment settings.
-- `run_experiment.py`: experiment entry point.
-- `run_experiment_previous.py`: implementation imported by the runner.
-- `speaker_splits.json`: original speaker split definitions.
-- `speaker_folds.json`: fixed development folds.
-- `build_*.py` and `extract_*.py`: data and feature preparation.
-- `evaluate_*.py`: evaluation and diagnostic utilities.
-- `predict.py`: inference with the verified ensemble bundle.
-- `artifacts/`: experiment reports and prediction tables.
-- `PROJECT_STATUS.md`: project progress notes.
+See [SETUP.md](docs/SETUP.md) for the complete Windows workflow.
 
-Some scripts represent earlier experiments and are not the current
-inference pipeline.
+The historical environment used Python 3.12.10 and CPU execution.
+`requirements-lock.txt` records that environment with PyYAML reconciled to
+6.0.2, the version in the saved experiment provenance. The original snapshot
+is preserved in `docs/requirements-original.txt`.
 
-## Local inference
+Installation from this historical lock has not been independently verified.
+Do not upgrade the existing working environment during migration.
 
-The current inference command is:
+For an existing checkout with its original caches, the new final-fit steps are:
+
+```powershell
+.\.venv\Scripts\python.exe .\run_experiment.py --config .\config.yaml --stage fit
+.\.venv\Scripts\python.exe .\run_experiment.py --config .\config.yaml --stage verify
+```
+
+They write a new bundle directory, leaving the historical fitted model intact:
+
+`artifacts/models/equal_ensemble_refactor_v1/`
+
+The fitting stage does not mark a model as audio-verified. Verification must
+succeed before that new bundle can be used by the prediction command.
+
+## Predict
+
+Existing verified bundle (same default path as before):
 
 ```powershell
 .\.venv\Scripts\python.exe .\predict.py "path\to\recording.wav"
 ```
 
-It requires the locally generated bundle:
+Newly fitted and verified bundle:
 
-```text
-artifacts/experiments/wav2vec2_wavlm_equal_ensemble_v1/fitted_model/ensemble_verified.joblib
+```powershell
+.\.venv\Scripts\python.exe .\predict.py "path\to\recording.wav" --bundle .\artifacts\models\equal_ensemble_refactor_v1\ensemble_verified.joblib
 ```
 
-It also requires the encoder files expected by the inference script.
+Inference uses locally cached pinned encoders by default. Pass
+`--allow-download` to permit downloading the specified revisions.
+Only load trusted joblib bundles. The repository does not ship trained weights.
 
-The fitted bundle, audio recordings, environments, and binary feature
-files are excluded from Git. Cloning this repository alone does not
-currently provide a ready-to-run inference installation.
+## Checks
 
-A complete clean-checkout workflow for producing the verified
-ensemble bundle remains to be packaged and documented.
+```powershell
+.\.venv\Scripts\python.exe -m unittest discover -s tests -v
+```
 
-Only load trusted serialized model files.
+Tests cover feature/label alignment, exclusion of evaluation data from scaler
+fitting, development/test speaker separation, class-probability ordering,
+serialization, and reproduction of published fold scores from saved predictions.
 
-## Verification completed locally
-
-- Audio readability and dataset-count checks.
-- Speaker-disjoint development comparisons.
-- Feature alignment and finite-value checks.
-- Classifier serialization and reload consistency.
-- Audio-to-feature and ensemble-probability consistency on
-  20 development recordings.
-- Command-line inference.
-- External evaluation on the fixed 30-recording sample.
-
-Consistency checks verify implementation behavior; they do not
-measure generalization.
+See [VALIDATION.md](docs/VALIDATION.md) for what was actually run and what remains
+unverified. Synthetic checks do not establish model quality.
 
 ## Research reference and attribution
 
 Pepino, L., Riera, P., and Ferrer, L. (2021).
 *Emotion Recognition from Speech Using wav2vec 2.0 Embeddings.*
 
-Paper:
-https://www.isca-archive.org/interspeech_2021/pepino21_interspeech.pdf
+- Paper: https://www.isca-archive.org/interspeech_2021/pepino21_interspeech.pdf
+- Official implementation: https://github.com/habla-liaa/ser-with-w2v2
+- Wav2Vec2: https://huggingface.co/facebook/wav2vec2-base
+- WavLM: https://huggingface.co/microsoft/wavlm-base-plus
 
-Official implementation:
-https://github.com/habla-liaa/ser-with-w2v2
+This project is inspired by the research, not an exact replication. Class
+mapping, normalization, splits, architecture, and metrics differ. Scores
+must not be compared directly with the paper.
 
-This project is inspired by the research, not an exact replication.
-Class definitions, normalization, splits, architecture, and metrics
-differ. Published scores are not directly comparable.
+Dataset and pretrained-model terms remain applicable to their respective
+materials. Raw audio, personal recordings, pretrained weights, and extracted
+binary features are excluded from Git. No new license for third-party
+materials is implied by this refactor.
 
-Pretrained models:
+## Remaining limitations and next steps
 
-- https://huggingface.co/facebook/wav2vec2-base
-- https://huggingface.co/microsoft/wavlm-base-plus
-
-Consult the original dataset and model licenses before reuse or
-redistribution. Raw audio and pretrained weights are not included.
-
-## Next steps
-
-- Package the final ensemble fitting and verification workflow.
-- Verify installation and execution from a clean environment.
-- Audit a specialist pretrained emotion-recognition model.
-- Establish an independent evaluation before further development.
-- Improve cross-dataset generalization through controlled experiments.
+- Run the new fitting/verification stages on the original local data.
+- Verify installation and full reproduction from a clean environment.
+- Historical scratch-only analyses do not all have permanent reproduction scripts;
+  their saved reports are retained as evidence, not claimed as fully reproducible.
+- Audit a specialist emotion-recognition model before selecting another experiment.
+- Establish independent evaluation data before further model development.
+- Improve cross-dataset generalization with controlled, documented comparisons.
