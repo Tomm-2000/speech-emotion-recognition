@@ -1,40 +1,42 @@
 # Project status
 
-## Current phase
+## Current stage
 
-Repository refactor prepared from commit
-`93cf2b04870dece3f7eae921e625b32cf5855601`.
-Local Windows audio validation of the refactor is pending.
+Repository refactoring is merged into main.
+The current ensemble fitting and audio verification stages passed locally
+on Windows with Python 3.12.10.
 
-## Selected model and evidence
+## Selected model
 
-- Frozen Wav2Vec2 and WavLM, mean of 12 transformer layers and time.
-- Separate StandardScaler + Logistic Regression (C=1) pipelines.
-- Equal probability fusion with a fixed eight-class order.
-- RAVDESS: five speaker-disjoint development folds, 1,200 recordings,
-  20 speakers; mean fold Macro F1 = 0.757.
-- CREMA-D diagnostic sample: 7/30 correct; six-reference-class Macro F1 = 0.235.
-- The old test set has been inspected and is not an untouched final benchmark.
-- No new model-quality result was generated during refactoring.
+- Frozen Wav2Vec2 and WavLM encoders.
+- Mean across twelve transformer layers and time.
+- Separate StandardScaler and Logistic Regression classifiers, C=1.
+- Equal probability fusion.
+- Development mean fold Macro F1: 0.757.
+- External CREMA-D sample: 7/30 correct, Macro F1: 0.235.
+- These accuracy results predate the refactor.
 
-## Decisions
+## Verification completed
 
-- Keep existing models, feature caches and original reports unchanged.
-- Preserve historical experiments in a separate package.
-- Use one runner for the current ensemble workflow.
-- Do not introduce emotion2vec or change datasets in a structural refactor.
-- Train and verify a new bundle in a separate output directory.
+- All ten automated tests passed on Windows.
+- Existing inference reproduced neutral with ensemble score 0.991.
+- Both classifiers fitted on 1,200 development recordings.
+- Model save/reload consistency passed.
+- Audio verification passed on twenty development recordings.
+- Maximum Wav2Vec2 feature difference: 5.364418029785156e-07.
+- Maximum WavLM feature difference: 0.0.
+- Maximum ensemble probability difference: 1.1920928955078125e-07.
+- Predicted labels were identical.
+- No new test accuracy evaluation was performed.
 
-## Verified in the refactor environment
+## Reproducibility note
 
-- Lightweight unit and integration checks on synthetic data.
-- Published ensemble fold scores recomputed from preserved prediction CSV.
-- Python syntax and CLI help checks.
-- See docs/VALIDATION.md for the exact scope and environment.
+The original feature provenance hashes CRLF bytes in speaker_folds.json.
+Its original formatting was restored and matched the recorded hash.
+.gitattributes disables line-ending conversion for this file.
 
-## Next action
+## Remaining work
 
-Apply the patch on a new branch, run the tests in the existing Windows venv,
-then verify prediction with the existing audio-verified bundle. After that,
-validate the new fit/verify stages on the original local development features.
-Clean-environment installation and full audio reproduction remain pending.
+- Verify installation and full execution from a clean environment.
+- Audit a specialist pretrained emotion model before further experiments.
+- Establish independent evaluation data for future development.

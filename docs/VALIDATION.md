@@ -40,3 +40,22 @@ model-training environment. Historical results were not retrained here.
 The original selected model's mathematical design has been preserved. Structural
 and synthetic tests alone do not establish complete audio-pipeline equivalence.
 Use the existing verified model and a known recording for the first Windows check.
+
+## Subsequent Windows verification
+
+The user subsequently ran the refactored pipeline in the original Windows
+environment. All ten tests passed, both classifiers fitted on 1,200
+development recordings, and serialization checks passed.
+
+Audio verification on twenty development recordings passed:
+- Maximum Wav2Vec2 feature difference: 5.364418029785156e-07.
+- Maximum WavLM feature difference: 0.0.
+- Maximum ensemble probability difference: 1.1920928955078125e-07.
+- Predicted labels were identical.
+
+The report is saved at:
+artifacts/models/equal_ensemble_refactor_v1/audio_verification.json
+
+These checks establish consistency on the checked recordings.
+Clean-environment installation and complete fresh audio extraction
+remain unverified. No new accuracy evaluation was performed.

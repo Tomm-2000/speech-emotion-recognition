@@ -1,0 +1,9 @@
+{
+  "training_recordings": 1200,
+  "training_speakers": 20,
+  "reload_probability_differences": {
+    "wav2vec2": 0.0,
+    "wavlm": 0.0
+  },
+  "audio_inference_verified": false
+}

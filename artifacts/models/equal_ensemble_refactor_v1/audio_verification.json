@@ -1,0 +1,32 @@
+{
+  "recordings": 20,
+  "paths": [
+    "data/raw/Actor_01/03-01-01-01-01-01-01.wav",
+    "data/raw/Actor_02/03-01-01-01-01-01-02.wav",
+    "data/raw/Actor_03/03-01-01-01-01-01-03.wav",
+    "data/raw/Actor_04/03-01-01-01-01-01-04.wav",
+    "data/raw/Actor_05/03-01-01-01-01-01-05.wav",
+    "data/raw/Actor_07/03-01-01-01-01-01-07.wav",
+    "data/raw/Actor_08/03-01-01-01-01-01-08.wav",
+    "data/raw/Actor_09/03-01-01-01-01-01-09.wav",
+    "data/raw/Actor_10/03-01-01-01-01-01-10.wav",
+    "data/raw/Actor_11/03-01-01-01-01-01-11.wav",
+    "data/raw/Actor_12/03-01-01-01-01-01-12.wav",
+    "data/raw/Actor_13/03-01-01-01-01-01-13.wav",
+    "data/raw/Actor_14/03-01-01-01-01-01-14.wav",
+    "data/raw/Actor_16/03-01-01-01-01-01-16.wav",
+    "data/raw/Actor_17/03-01-01-01-01-01-17.wav",
+    "data/raw/Actor_18/03-01-01-01-01-01-18.wav",
+    "data/raw/Actor_19/03-01-01-01-01-01-19.wav",
+    "data/raw/Actor_20/03-01-01-01-01-01-20.wav",
+    "data/raw/Actor_22/03-01-01-01-01-01-22.wav",
+    "data/raw/Actor_23/03-01-01-01-01-01-23.wav"
+  ],
+  "maximum_feature_differences": {
+    "wav2vec2": 5.364418029785156e-07,
+    "wavlm": 0.0
+  },
+  "maximum_probability_difference": 1.1920928955078125e-07,
+  "identical_predicted_labels": true,
+  "note": "Development smoke verification, not an accuracy evaluation."
+}

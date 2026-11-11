@@ -256,7 +256,7 @@ materials is implied by this refactor.
 
 ## Remaining limitations and next steps
 
-- Run the new fitting/verification stages on the original local data.
+- Completed locally: final ensemble fitting and twenty-recording audio verification.
 - Verify installation and full reproduction from a clean environment.
 - Historical scratch-only analyses do not all have permanent reproduction scripts;
   their saved reports are retained as evidence, not claimed as fully reproducible.
