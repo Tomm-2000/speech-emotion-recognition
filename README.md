@@ -132,11 +132,7 @@ predictions:
 - No classifier fitting or tuning on this sample.
 - All eight model prediction options retained.
 
-| System | Correct | Accuracy | Macro F1 |
-|---|---:|---:|---:|
-| Wav2Vec2 | 8/30 | 0.267 | 0.277 |
-| WavLM | 6/30 | 0.200 | 0.210 |
-| Equal ensemble | 7/30 | 0.233 | 0.235 |
+
 
 Macro F1 is computed over the six reference classes:
 angry, disgust, fearful, happy, neutral, and sad.
