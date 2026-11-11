@@ -4,20 +4,12 @@ from pathlib import Path
 import librosa
 import numpy as np
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[2]
 SAMPLE_RATE = 16_000
 N_MFCC = 40
 
 
-def extract_mfcc(path: Path) -> np.ndarray:
-    audio, sample_rate = librosa.load(path, sr=SAMPLE_RATE, mono=True)
-    mfcc = librosa.feature.mfcc(y=audio, sr=sample_rate, n_mfcc=N_MFCC)
-
-    features = np.concatenate([mfcc.mean(axis=1), mfcc.std(axis=1)])
-    if features.shape != (2 * N_MFCC,) or not np.isfinite(features).all():
-        raise ValueError(f"Invalid MFCC features for {path}")
-
-    return features
+from ser.mfcc import extract_mfcc
 
 
 def main() -> None:

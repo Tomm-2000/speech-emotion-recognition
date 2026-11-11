@@ -39,7 +39,7 @@ counts = Counter(row["split"] for row in rows)
 if counts != expected_counts:
     raise SystemExit(f"Unexpected recording counts: {dict(counts)}")
 
-with (root / "data" / "manifest.csv").open("w", newline="", encoding="utf-8") as file:
+with (root / "data" / "manifest.csv").open("x", newline="", encoding="utf-8") as file:
     writer = csv.DictWriter(file, fieldnames=["path", "speaker_id", "emotion_code", "split"])
     writer.writeheader()
     writer.writerows(rows)

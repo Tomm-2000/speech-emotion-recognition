@@ -6,9 +6,9 @@ from sklearn.metrics import accuracy_score, f1_score
 from torch import nn
 from torch.utils.data import DataLoader, TensorDataset
 
-from cnn_model import EmotionCNN
+from .cnn_model import EmotionCNN
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[2]
 BATCH_SIZE = 32
 MAX_EPOCHS = 100
 PATIENCE = 5

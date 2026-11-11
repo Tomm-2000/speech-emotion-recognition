@@ -1,15 +1,12 @@
-import csv
+"""Shared MFCC extraction for historical baseline experiments."""
 from pathlib import Path
-
-import librosa
 import numpy as np
 
-from extract_features import N_MFCC, SAMPLE_RATE
-
-ROOT = Path(__file__).resolve().parent
-
+SAMPLE_RATE = 16_000
+N_MFCC = 40
 
 def extract_mfcc_sequence(path: Path) -> np.ndarray:
+    import librosa
     audio, sample_rate = librosa.load(path, sr=SAMPLE_RATE, mono=True)
     sequence = librosa.feature.mfcc(
         y=audio,
@@ -25,11 +22,9 @@ def extract_mfcc_sequence(path: Path) -> np.ndarray:
     return sequence
 
 
-if __name__ == "__main__":
-    with (ROOT / "data" / "manifest.csv").open(encoding="utf-8", newline="") as file:
-        recording = next(row for row in csv.DictReader(file) if row["split"] == "train")
-
-    path = ROOT / recording["path"]
+def extract_mfcc(path: Path) -> np.ndarray:
     sequence = extract_mfcc_sequence(path)
-    print(f"Recording: {path.name}")
-    print(f"MFCC sequence shape: {sequence.shape}")
+    features = np.concatenate([sequence.mean(axis=1), sequence.std(axis=1)])
+    if features.shape != (80,) or not np.isfinite(features).all():
+        raise ValueError(f"Invalid MFCC features for {path}")
+    return features

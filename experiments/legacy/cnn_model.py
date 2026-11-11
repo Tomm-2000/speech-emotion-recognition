@@ -26,7 +26,7 @@ class EmotionCNN(nn.Module):
 
 def main() -> None:
     torch.manual_seed(42)
-    data_path = Path(__file__).resolve().parent / "data" / "mfcc_sequences_dev.npz"
+    data_path = Path(__file__).resolve().parents[2] / "data" / "mfcc_sequences_dev.npz"
 
     with np.load(data_path, allow_pickle=False) as data:
         features = torch.from_numpy(data["X_train"][:8])

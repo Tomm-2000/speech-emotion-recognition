@@ -3,7 +3,7 @@ from pathlib import Path
 import re
 import wave
 
-files = sorted(Path("data/raw").rglob("*.wav"))
+files = sorted((Path(__file__).resolve().parent / "data" / "raw").rglob("*.wav"))
 counts = Counter()
 emotions_by_actor = defaultdict(set)
 expected_emotions = {f"{n:02d}" for n in range(1, 9)}

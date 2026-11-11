@@ -71,3 +71,6 @@ Desktop.ini
 # Temporary files
 *.tmp
 *.log
+# Local listening playlists
+*.m3u8
+*.m3u
